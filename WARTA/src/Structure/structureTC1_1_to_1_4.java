@@ -1,7 +1,5 @@
 package Structure;
 
-import java.io.File;
-
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,10 +15,11 @@ import Base.browserFactory;
 import Base.cockpitOverview360;
 import Base.login;
 
+
 //od TC1.1 do TC1.4
 public class structureTC1_1_to_1_4 {
 	@Test
-public void main() throws InterruptedException{
+public void StructureTC1_1_to_1_4() throws InterruptedException{
 		
 		WebDriver driver = browserFactory.getBrowser("Firefox");
 		
@@ -33,13 +32,14 @@ public void main() throws InterruptedException{
 		
 		
 		WebElement reports;
-		reports = driver.findElement(By.xpath("/html/body/div/ui-view/div/div/div/div/div/div[1]/headline/div/div[1]/div/div/structure-toggle/a"));
+		reports = driver.findElement(By.id("structure_toggle"));
 		reports.click();
 		
+		Thread.sleep(5000);
 		
 		String netElementNumber = "WARD00026000";
 		WebElement search;
-		search = driver.findElement(By.xpath("/html/body/div[3]/div/div/div/search-combo-box/div/div[1]/form/input"));
+		search = driver.findElement(By.id("search_combo_box_1_input"));
 		search.sendKeys(netElementNumber);
 		
 		//tu koniecznie jakis waitFor TODO!!! taaa, chuja, poszlo jak w kamieniem w plot, po wpisaniu wartoœci stare nie znikaj¹ od razu, nie da siê!!

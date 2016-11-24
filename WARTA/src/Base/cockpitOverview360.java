@@ -23,7 +23,7 @@ public class cockpitOverview360{
 		action.moveToElement(we).moveToElement(driver.findElement(By.xpath("/html/body/div/ui-view/div/div/app-header/div/app-menu/header/div/div/div/div[2]/div/div[1]/bookmarks/div/bookmark[1]/div/div/bookmark[2]/div/a"))).click().build().perform();
 		
 		WebElement wait = (new WebDriverWait(driver, 10))
-				  .until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/ui-view/div/div/div/div/div/div[1]/headline/div/div[1]/div/div/structure-toggle/a")));;
+				  .until(ExpectedConditions.presenceOfElementLocated(By.id("structure_toggle")));;
 					
 		
 
