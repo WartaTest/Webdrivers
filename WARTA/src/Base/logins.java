@@ -28,7 +28,7 @@ public class logins {
 	public static enum password1 {
 	    CENTRALA {
 	        public String toString() {
-	            return "W@rta234";
+	            return "234W@rta";
 	        }
 	    },
 
