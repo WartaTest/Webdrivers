@@ -1,4 +1,4 @@
-package Base;
+package Base.Login;
 
 import java.util.List;
 
@@ -12,8 +12,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Base.logins.password1;
-import Base.logins.username1;
+import Base.browserFactory;
+import Base.Login.logins.password1;
+import Base.Login.logins.username1;
 
 
 public class login {

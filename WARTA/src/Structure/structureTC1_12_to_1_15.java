@@ -9,10 +9,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Base.logins.username1;
 import Base.browserFactory;
 import Base.cockpitOverview360;
-import Base.login;
+import Base.Login.login;
+import Base.Login.logins.username1;
 
 public class structureTC1_12_to_1_15 {
 	@Test

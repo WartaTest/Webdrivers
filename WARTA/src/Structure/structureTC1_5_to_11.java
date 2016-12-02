@@ -6,13 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Base.logins.username1;
+import Base.startPage;
+import Base.Login.login;
+import Base.Login.logins.username1;
 import Base.browserFactory;
 import Base.cockpitOverview360;
-import Base.login;
 
 public class structureTC1_5_to_11 {
 	@Test
@@ -24,8 +26,10 @@ public class structureTC1_5_to_11 {
 		login.RunLogin(username1.CENTRALA.toString);
 		
 		
-		cockpitOverview360 cockpitOverview360 = new cockpitOverview360();
-		cockpitOverview360.RunCockpit();
+		startPage Start = new startPage();
+		
+		Actions action = new Actions(driver);
+		
 		
 		WebElement reports;
 		reports = driver.findElement(By.id("structure_toggle"));

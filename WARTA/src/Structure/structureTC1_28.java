@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import Base.browserFactory;
 import Base.cockpitOverview360;
-import Base.login;
-import Base.logins.username1;
+import Base.Login.login;
+import Base.Login.logins.username1;
 
 public class structureTC1_28 {
 

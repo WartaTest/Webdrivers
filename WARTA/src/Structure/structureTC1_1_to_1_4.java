@@ -10,10 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Base.logins.username1;
 import Base.browserFactory;
 import Base.cockpitOverview360;
-import Base.login;
+import Base.Login.login;
+import Base.Login.logins.username1;
 
 
 //od TC1.1 do TC1.4
