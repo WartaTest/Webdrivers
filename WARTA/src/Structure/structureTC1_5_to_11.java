@@ -26,9 +26,6 @@ public class structureTC1_5_to_11 {
 		login.RunLogin(username1.CENTRALA.toString);
 		
 		
-		startPage Start = new startPage();
-		
-		Actions action = new Actions(driver);
 		
 		
 		WebElement reports;
