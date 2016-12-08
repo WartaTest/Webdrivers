@@ -8,7 +8,7 @@ import Base.browserFactory;
 
 public class salesStructure {
 	
-	public static void Sales_Structure() throws InterruptedException {
+	public static void Sales_Structure() {
 	
 	WebDriver driver = browserFactory.getBrowser("Firefox");
 	
@@ -122,6 +122,9 @@ public class salesStructure {
 	
 	WebElement cancel;
 	cancel = driver.findElement(By.id("btnesc"));
+	
+	WebElement close;
+	close = driver.findElement(By.id("btndel"));
 	
 	}
 	
