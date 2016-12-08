@@ -24,6 +24,8 @@ public class cockpitOverview360{
 		
 		WebElement wait = (new WebDriverWait(driver, 10))
 				  .until(ExpectedConditions.presenceOfElementLocated(By.id("structure_toggle")));;
+				  
+				  
 					
 		
 

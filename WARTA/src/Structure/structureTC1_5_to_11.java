@@ -25,9 +25,10 @@ public class structureTC1_5_to_11 {
 		login login = new login();
 		login.RunLogin(username1.CENTRALA.toString);
 		
+		cockpitOverview360 cockpitOverview360 = new cockpitOverview360();
+		cockpitOverview360.RunCockpit();
 		
-		
-		
+
 		WebElement reports;
 		reports = driver.findElement(By.id("structure_toggle"));
 		reports.click();

@@ -19,10 +19,10 @@ public class startPage {
 	login.Login();
 	
 	WebElement dictionary; 
-	dictionary = driver.findElement(By.id("placeholder"));
+	dictionary = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/a"));
 	
 	WebElement sales_structure;
-	sales_structure = driver.findElement(By.id("placeholder"));
+	sales_structure = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/ul/li[1]/a"));
 	
 	
 	

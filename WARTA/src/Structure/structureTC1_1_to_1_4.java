@@ -53,8 +53,7 @@ public void StructureTC1_1_to_1_4() throws InterruptedException{
 		
 		WebElement structureElement;
 		structureElement = driver.findElement(By.xpath("/html/body/div[3]/div/div/div/search-combo-box/div/div[2]/search-combo-box-node/ul/li/search-combo-box-node[1]/ul/li/div/div[2]/div[1]"));
-		structureElement.equals("placeholder dla wartoœci od Dariuuuuszaaaa");
-		
+		structureElement.equals("placeholder dla wartoœci od Dariuuuuszaaaa");		
 		
 	}
 
