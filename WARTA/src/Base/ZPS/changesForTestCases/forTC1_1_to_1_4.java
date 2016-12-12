@@ -1,6 +1,7 @@
 package Base.ZPS.changesForTestCases;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import Base.ZPS.login;
 import Base.ZPS.combiningPortfolios.*;
@@ -14,11 +15,12 @@ public class forTC1_1_to_1_4 {
 		login login = new login();
 		login.Login();
 	}
-	
+	@Test
 	public void TC1_1_to_1_4 () throws InterruptedException{
 		
-		combiningPortfolios combiningPortfolios = new combiningPortfolios();
-		combiningPortfolios.CombiningPortfolios();
+		CombiningPortfolios CombiningPortfolios = new CombiningPortfolios();
+		CombiningPortfolios.primaryInputSearch("");
+		
 		
 		
 	}

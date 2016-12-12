@@ -4,27 +4,36 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import Base.browserFactory;
 import Base.ZPS.login;
 
 public class startPage {
 	
-	public static void StartPage() throws InterruptedException {
-
+	private WebDriver driver = browserFactory.getBrowser("Firefox");
 	
-	WebDriver driver = browserFactory.getBrowser("Firefox");
+	public void dictionary(){
+		
 	
-	login login = new login();
-	login.Login();
+	WebElement salesStructure;
+	salesStructure = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/ul/li[1]/a"));
 	
-	WebElement dictionary; 
-	dictionary = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/a"));
+	Actions mouseOverDictionary = new Actions(driver);
+	WebElement dictionary = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/a"));
+	mouseOverDictionary.moveToElement(dictionary).moveToElement(salesStructure).click();
+	}
 	
-	WebElement sales_structure;
-	sales_structure = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[9]/ul/li[1]/a"));
+	public void combiningPortfolios(){
+	WebElement combiningPortgolios;
+	combiningPortgolios = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[5]/a"));
+	combiningPortgolios.click();
+	}
 	
+	public void assignToStrutureOrManager(){
+	WebElement assignToStrutureOrManager;
+	assignToStrutureOrManager = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[7]/a"));
+	assignToStrutureOrManager.click();
+	}
 	
-	
-}
 }

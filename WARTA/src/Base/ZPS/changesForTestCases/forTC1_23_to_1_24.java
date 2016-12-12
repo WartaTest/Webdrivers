@@ -3,7 +3,7 @@ package Base.ZPS.changesForTestCases;
 import org.junit.Before;
 
 import Base.ZPS.login;
-import Base.ZPS.assignToStructureOrManager.assignToStructureOrManager;
+import Base.ZPS.assignToStructureOrManager.AssignToStructureOrManager;
 
 public class forTC1_23_to_1_24 {
 	
@@ -18,8 +18,8 @@ public class forTC1_23_to_1_24 {
 	public void TC1_23_to_1_24 () throws InterruptedException{
 		
 		
-		assignToStructureOrManager assignToStructureOrManager = new assignToStructureOrManager();
-		assignToStructureOrManager.AssignToStructureOrManager();
+		AssignToStructureOrManager assignToStructureOrManager = new AssignToStructureOrManager();
+		
 		
 	}
 }

@@ -11,23 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.browserFactory;
 
 public class cockpitOverview360{
+	private WebDriver driver = browserFactory.getBrowser("Firefox");
 	
-	
-	public static void RunCockpit() {
-		WebDriver driver = browserFactory.getBrowser("Firefox");
-		
-		driver.get("https://eagenttst.warta.pl/view360/#/app/main/start?aid=65536&agentOuid=CENTRALA");
-		
-		Actions action = new Actions(driver);
-		WebElement we = driver.findElement(By.xpath("/html/body/div/ui-view/div/div/app-header/div/app-menu/header/div/div/div/div[2]/div/div[1]/bookmarks/div/bookmark[1]/div/a"));
-		action.moveToElement(we).moveToElement(driver.findElement(By.xpath("/html/body/div/ui-view/div/div/app-header/div/app-menu/header/div/div/div/div[2]/div/div[1]/bookmarks/div/bookmark[1]/div/div/bookmark[2]/div/a"))).click().build().perform();
-		
-		WebElement wait = (new WebDriverWait(driver, 10))
-				  .until(ExpectedConditions.presenceOfElementLocated(By.id("structure_toggle")));;
+	public void structureToggle() {
 				  
-				  
-					
-		
+	WebElement structureToggle;
+	structureToggle = driver.findElement(By.id("structure_toggle"));
+	structureToggle.click();
 
-}
+	}
 }

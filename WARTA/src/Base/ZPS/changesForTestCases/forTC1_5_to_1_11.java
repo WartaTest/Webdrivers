@@ -4,7 +4,7 @@ import org.junit.Before;
 
 import Base.ZPS.login;
 import Base.ZPS.salesStructure;
-import Base.ZPS.combiningPortfolios.combiningPortfolios;
+import Base.ZPS.combiningPortfolios.CombiningPortfolios;
 
 public class forTC1_5_to_1_11 {
 	
@@ -21,11 +21,7 @@ public class forTC1_5_to_1_11 {
 	public void TC1_5_to_1_11 () {
 			
 		salesStructure salesStructure = new salesStructure();
-		salesStructure.Buttons();
-		salesStructure.Editing();
-		salesStructure.HDI_Elements();
-		salesStructure.Retail_Elements();
-		salesStructure.Sales_Structure();
+
 
 }
 }

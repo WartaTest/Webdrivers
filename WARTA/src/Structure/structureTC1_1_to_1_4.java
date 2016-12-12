@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.browserFactory;
 import Base.cockpitOverview360;
+import Base.startPage;
 import Base.Login.login;
 import Base.Login.logins.username1;
 
@@ -26,14 +27,11 @@ public void StructureTC1_1_to_1_4() throws InterruptedException{
 		login login = new login();
 		login.RunLogin(username1.CENTRALA.toString);
 		
+		startPage startPage = new startPage();
+		startPage.overview360();
 		
 		cockpitOverview360 cockpitOverview360 = new cockpitOverview360();
-		cockpitOverview360.RunCockpit();
-		
-		
-		WebElement reports;
-		reports = driver.findElement(By.id("structure_toggle"));
-		reports.click();
+		cockpitOverview360.structureToggle();
 		
 		Thread.sleep(5000);
 		
@@ -41,9 +39,7 @@ public void StructureTC1_1_to_1_4() throws InterruptedException{
 		WebElement search;
 		search = driver.findElement(By.id("search_combo_box_1_input"));
 		search.sendKeys(netElementNumber);
-		
-		//tu koniecznie jakis waitFor TODO!!! taaa, chuja, poszlo jak w kamieniem w plot, po wpisaniu wartoœci stare nie znikaj¹ od razu, nie da siê!!
-		
+	
 		Thread.sleep(5000);
 		
 		WebElement expand;
@@ -56,5 +52,4 @@ public void StructureTC1_1_to_1_4() throws InterruptedException{
 		structureElement.equals("placeholder dla wartoœci od Dariuuuuszaaaa");		
 		
 	}
-
 }

@@ -22,12 +22,7 @@ public void TC1_27 () throws InterruptedException{
 		login login = new login();
 		login.Login();
 		
-		salesStructure salesStructure = new salesStructure();
-		salesStructure.Buttons();
-		salesStructure.Editing();
-		salesStructure.HDI_Elements();
-		salesStructure.Retail_Elements();
-		salesStructure.Sales_Structure();
+
 
 }
 }
