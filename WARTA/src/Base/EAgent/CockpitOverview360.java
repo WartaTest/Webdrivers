@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CockpitOverview360{
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
-	public void structureToggle() {
+	public void structureToggleClick() {
 				  
 	WebElement structureToggle;
 	structureToggle = driver.findElement(By.id("structure_toggle"));

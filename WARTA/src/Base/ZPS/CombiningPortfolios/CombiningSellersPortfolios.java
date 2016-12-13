@@ -21,43 +21,43 @@ public class CombiningSellersPortfolios {
 		
 	}
 		
-	public void secondayAgentNumberOption1(){
+	public void secondaryAgentNumberOption1Choose(){
 		
-		Actions secondayAgentNumber = new Actions(driver);
-		secondayAgentNumber.moveToElement(driver.findElement(By.id("idpod"))).click().moveToElement(driver.findElement(By.id("opt1")));
+		Actions secondaryAgentNumber = new Actions(driver);
+		secondaryAgentNumber.moveToElement(driver.findElement(By.id("idpod"))).click().moveToElement(driver.findElement(By.id("opt1"))).click();
 	}
 	
-	public void secondayAgentNumberOption2(){
+	public void secondaryAgentNumberOption2Choose(){
 		
-		Actions secondayAgentNumber = new Actions(driver);
-		secondayAgentNumber.moveToElement(driver.findElement(By.id("idpod"))).click().moveToElement(driver.findElement(By.id("opt2")));
+		Actions secondaryAgentNumber = new Actions(driver);
+		secondaryAgentNumber.moveToElement(driver.findElement(By.id("idpod"))).click().moveToElement(driver.findElement(By.id("opt2"))).click();
 	}
 	
-	public void newPrimaryAgentNumber(String newPrimaryNumber){
+	public void newPrimaryAgentNumberFillUp(String newPrimaryNumber){
 		WebElement newPrimaryAgentNumber;
 		newPrimaryAgentNumber = driver.findElement(By.id("idnew"));
 		newPrimaryAgentNumber.sendKeys(newPrimaryNumber);
 	}
 	
-	public void forEachForCategoryCheckbox(String number){
+	public void forEachForCategoryCheckboxClick(String number){
 		WebElement forEachForCategoryCheckbox;
 		forEachForCategoryCheckbox = driver.findElement(By.id("allkat"));
 		forEachForCategoryCheckbox.click();
 	}
 	
-	public void combiningSellersPortfoliosDate(String date){
+	public void combiningSellersPortfoliosDateSetDate(String date){
 		WebElement combiningSellersPortfoliosDate;
 		combiningSellersPortfoliosDate = driver.findElement(By.id("dtstart"));
 		combiningSellersPortfoliosDate.sendKeys(date);
 	}
 	
-	public void combiningSellersPortfoliosReason(String reason){
+	public void combiningSellersPortfoliosReasonFillUp(String reason){
 		WebElement combiningSellersPortfoliosReason;
 		combiningSellersPortfoliosReason = driver.findElement(By.id("descr"));
 		combiningSellersPortfoliosReason.sendKeys(reason);
 	}
 	
-	public void combiningSellersPortfoliosSave(String number){
+	public void combiningSellersPortfoliosSaveClick(String number){
 		WebElement combiningSellersPortfoliosSave;
 		combiningSellersPortfoliosSave = driver.findElement(By.id("btnclr"));
 		combiningSellersPortfoliosSave.click();

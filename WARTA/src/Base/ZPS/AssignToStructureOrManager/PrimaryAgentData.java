@@ -41,19 +41,19 @@ public class PrimaryAgentData {
 	primaryAgentDataSearch = driver.findElement(By.id("btnpfind"));
 	}
 	
-	public void primaryAgentDataDateChange(String date){
+	public void primaryAgentDataDateChangeSetDate(String date){
 	WebElement primaryAgentDataDateChange;
 	primaryAgentDataDateChange = driver.findElement(By.id("dtzm"));
 	primaryAgentDataDateChange.sendKeys(date);
 	}
 	
-	public void primaryAgentDataReason(String reason){
+	public void primaryAgentDataReasonFillUp(String reason){
 	WebElement primaryAgentDataReason;
 	primaryAgentDataReason = driver.findElement(By.id("descr"));
 	primaryAgentDataReason.sendKeys(reason);
 	}
 	
-	public void primaryAgentDataAcceptChanges(){
+	public void primaryAgentDataAcceptChangesClick(){
 	WebElement primaryAgentDataAcceptChanges;
 	primaryAgentDataAcceptChanges = driver.findElement(By.id("btnfind"));
 	primaryAgentDataAcceptChanges.click();

@@ -16,19 +16,18 @@ public class KamilStructure
 	public void KamilStructure() throws InterruptedException
 	{
 
-WebDriver driver = BrowserFactory.getBrowser("Firefox");
+		WebDriver driver = BrowserFactory.getBrowser("Firefox");
 		
 		Login login = new Login();
 		login.RunLogin(username1.CENTRALA.toString);
 		
 		StartPage startPage = new StartPage();
-		startPage.overview360();
+		startPage.overview360GoTo();
 		
 		CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
-		cockpitOverview360.structureToggle();
+		cockpitOverview360.structureToggleClick();
 		
 		Thread.sleep(3000);
-		
 		
 		String netElementNumber1 = "GDAH00223000";
 		StructureReports structureReports = new StructureReports();

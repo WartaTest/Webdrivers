@@ -11,7 +11,7 @@ import Base.EAgent.BrowserFactory;
 
 public class Login {
 	
-	public static void Login() throws InterruptedException {
+	public static void runLogin() throws InterruptedException {
 	
 	WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	driver.get("http://10.9.79.173:8080/zps/login");

@@ -13,7 +13,7 @@ public class StartPage {
 	
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
-	public void dictionary(){
+	public void dictionaryStructureClick(){
 		
 	
 	WebElement salesStructure;
@@ -24,13 +24,13 @@ public class StartPage {
 	mouseOverDictionary.moveToElement(dictionary).moveToElement(salesStructure).click();
 	}
 	
-	public void combiningPortfolios(){
+	public void combiningPortfoliosClick(){
 	WebElement combiningPortgolios;
 	combiningPortgolios = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[5]/a"));
 	combiningPortgolios.click();
 	}
 	
-	public void assignToStrutureOrManager(){
+	public void assignToStrutureOrManagerClick(){
 	WebElement assignToStrutureOrManager;
 	assignToStrutureOrManager = driver.findElement(By.xpath("//*[@id='main_menu']/ul/li[7]/a"));
 	assignToStrutureOrManager.click();

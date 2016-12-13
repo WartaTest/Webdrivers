@@ -24,7 +24,7 @@ public class Login {
 
 	private static boolean warning = false;
 
-	public static void RunLogin(username1 tostring) throws InterruptedException{
+	public void RunLogin(username1 tostring) throws InterruptedException{
 		WebDriver driver = BrowserFactory.getBrowser("Firefox");
 		driver.get("https://eagenttst.warta.pl");
 

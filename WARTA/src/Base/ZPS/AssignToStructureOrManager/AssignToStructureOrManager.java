@@ -10,14 +10,14 @@ public class AssignToStructureOrManager {
 	
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 
-	public void searchInput(String searchKeys){
+	public void searchInputFillUp(String searchKeys){
 		
 		WebElement searchInput;
 		searchInput = driver.findElement(By.id("idnad"));
 		searchInput.sendKeys(searchKeys);
 	}
 	
-	public void searchStructureManager(String searchKeys){
+	public void searchStructureManagerClick(String searchKeys){
 		WebElement searchStructureManager;
 		searchStructureManager = driver.findElement(By.id("btnfind"));
 		searchStructureManager.click();

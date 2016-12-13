@@ -29,10 +29,10 @@ public void structureTC1_1_to_1_4() throws InterruptedException{
 		login.RunLogin(username1.CENTRALA.toString);
 		
 		StartPage startPage = new StartPage();
-		startPage.overview360();
+		startPage.overview360GoTo();
 		
 		CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
-		cockpitOverview360.structureToggle();
+		cockpitOverview360.structureToggleClick();
 		
 		StructureReports structureReport = new StructureReports();
 		

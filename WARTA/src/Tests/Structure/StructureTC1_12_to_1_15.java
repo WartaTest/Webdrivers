@@ -26,10 +26,10 @@ public class StructureTC1_12_to_1_15 {
 	login.RunLogin(username1.CENTRALA.toString);
 	
 	StartPage startPage = new StartPage();
-	startPage.overview360();
+	startPage.overview360GoTo();
 	
 	CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
-	cockpitOverview360.structureToggle();
+	cockpitOverview360.structureToggleClick();
 	
 	StructureReports structureReport = new StructureReports();
 	
