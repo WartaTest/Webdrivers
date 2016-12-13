@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.EAgent.BrowserFactory;
 import Base.EAgent.CockpitOverview360;
 import Base.EAgent.StartPage;
+import Base.EAgent.StructureReports;
 import Base.EAgent.Login.Login;
 import Base.EAgent.Login.Logins.username1;
 
@@ -31,92 +32,83 @@ public class StructureTC1_5_to_11 {
 		CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
 		cockpitOverview360.structureToggle();
 		
-		Thread.sleep(3000);
+		
 		
 		String netElementNumber1 = "WARD01MS02";
-		WebElement search;
-		search = driver.findElement(By.id("search_combo_box_1_input"));
-		search.sendKeys(netElementNumber1);				
+		StructureReports structureReports = new StructureReports();
+		structureReports.searchInputFillUp(netElementNumber1);
+				
 		
-		Thread.sleep(3000);
+		structureReports.searchInputClear();
 		
 		String structureElementValue1 = "£UKASZ TRZASKOMA";
-		WebElement structureElement;
-		structureElement = driver.findElement(By.cssSelector(".search-combo-box-node__fullname"));
-		structureElement.equals(structureElementValue1);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue1), true);
+		structureReports.structureReportElementCheck(structureElementValue1);
 		
-		WebElement structureElementClear;
-		structureElementClear = driver.findElement(By.cssSelector(".search-combo-box--expanded__input.ng-valid"));
 		
-		structureElementClear.clear();
+		
+		structureReports.searchInputClear();
+		
 		
 		String netElementNumber2 = "BIAH01MSOL";
-		search.sendKeys(netElementNumber2);
+		structureReports.searchInputFillUp(netElementNumber2);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue2 = "PAWE£ MILEWSKI";
-		structureElement.equals(structureElementValue2);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue2), true);
+		structureReports.structureReportElementCheck(structureElementValue2);
 		
-		structureElementClear.clear();
+		structureReports.searchInputClear();
 		
 		String netElementNumber3 = "KATD01MS01";
-		search.sendKeys(netElementNumber3);
+		structureReports.searchInputFillUp(netElementNumber3);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue3 = "ANNA SROGA";
-		structureElement.equals(structureElementValue3);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue3), true);
+		structureReports.structureReportElementCheck(structureElementValue3);
 		
-		structureElementClear.clear();
+		structureReports.searchInputClear();
 		
 		String netElementNumber4 = "GDAH01MSSL";
-		search.sendKeys(netElementNumber4);
+		structureReports.searchInputFillUp(netElementNumber4);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue4 = "¯ANETA KOPACZ";
-		structureElement.equals(structureElementValue4);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue4), true);
-		
-		structureElementClear.clear();
+		structureReports.structureReportElementCheck(structureElementValue4);
+
+		structureReports.searchInputClear();
 		
 		String netElementNumber5 = "BIAH01MSSE";
-		search.sendKeys(netElementNumber5);
+		structureReports.searchInputFillUp(netElementNumber5);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue5 = "BART£OMIEJ ZIMMERMANN";
-		structureElement.equals(structureElementValue5);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue5), true);
+		structureReports.structureReportElementCheck(structureElementValue5);
 		
-		structureElementClear.clear();
+		structureReports.searchInputClear();
 		
 		String netElementNumber6 = "LODDRCS01";
-		search.sendKeys(netElementNumber6);
+		structureReports.searchInputFillUp(netElementNumber6);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue6 = "RYSZARDA OTTO";
-		structureElement.equals(structureElementValue6);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue6), true);
+		structureReports.structureReportElementCheck(structureElementValue6);
 		
-		structureElementClear.clear();
+		structureReports.searchInputClear();
 		
 		String netElementNumber7 = "BIAH";
-		search.sendKeys(netElementNumber7);
+		structureReports.searchInputFillUp(netElementNumber7);
 		
-		Thread.sleep(3000);
+		
 		
 		String structureElementValue7 = "DOROTA WIERZCHOWSKA";
-		structureElement.equals(structureElementValue7);
-		Assert.assertEquals(driver.getPageSource().contains(structureElementValue7), true);
+		structureReports.structureReportElementCheck(structureElementValue7);
 		
-		structureElementClear.clear();
+		structureReports.searchInputClear();
 		
-
+		driver.quit();
 }
 }

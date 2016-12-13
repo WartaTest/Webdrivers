@@ -25,6 +25,8 @@ public class StructureTC1_28 {
 		CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
 		cockpitOverview360.structureToggle();
 		
+		
+		
 		Thread.sleep(3000);
 		
 		String netElementNumber1 = "WARD02MS10";
@@ -38,5 +40,7 @@ public class StructureTC1_28 {
 		WebElement structureElement;
 		structureElement = driver.findElement(By.cssSelector(".search-combo-box-node__fullname"));
 		structureElement.equals(structureElementValue1);
+		
+		driver.quit();
 		}
 	}

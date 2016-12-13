@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import Base.EAgent.BrowserFactory;
 import Base.EAgent.CockpitOverview360;
 import Base.EAgent.StartPage;
+import Base.EAgent.StructureReports;
 import Base.EAgent.Login.Login;
 import Base.EAgent.Login.Logins.username1;
 
@@ -28,84 +29,56 @@ public class StructureTC1_27 {
 	CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
 	cockpitOverview360.structureToggle();
 	
-	Thread.sleep(6000);
-	
-	WebElement hdi;
-	hdi = driver.findElement(By.id("search_combo_box_1_input"));
-	hdi.click();
-	
+	StructureReports structureReports = new StructureReports();
+		
 	Assert.assertEquals(driver.getPageSource().contains("WARH"), false);
 	Assert.assertEquals(driver.getPageSource().contains("MONIKA CIO£KIEWICZ UKLEJA"), false);
-	
-	
+		
 	String netElementNumber1 = "WARHMSDR";
-	WebElement search;
-	search = driver.findElement(By.id("search_combo_box_1_input"));
-	search.sendKeys(netElementNumber1);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber1);
 	Assert.assertEquals(driver.getPageSource().contains("MONIKA RAWA"), false);
 	
-	WebElement structureElementClear;
-	structureElementClear = driver.findElement(By.cssSelector(".search-combo-box--expanded__input.ng-valid"));
-	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber2 = "WARH01MSSK";
-	search.sendKeys(netElementNumber2);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber2);
 	Assert.assertEquals(driver.getPageSource().contains("MONIKA KO£TUÑ"), false);
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber3 = "WARH01MSW1";
-	search.sendKeys(netElementNumber3);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber3);
 	Assert.assertEquals(driver.getPageSource().contains("RENATA GALUS"), false);
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber4 = "WARH02MSW1";
-	search.sendKeys(netElementNumber4);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber4);
 	Assert.assertEquals(driver.getPageSource().contains("MICHA£ RATAJCZYK"), false);
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber5 = "WARH02MSLD";
-	search.sendKeys(netElementNumber5);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber5);
 	Assert.assertEquals(driver.getPageSource().contains("AGNIESZKA LEŒKIEWICZ"), false);
 	
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber6 = "WARH04MSW1";
-	search.sendKeys(netElementNumber6);
-	
-	Thread.sleep(3000);
+	structureReports.searchInputFillUp(netElementNumber6);
 	
 	Assert.assertEquals(driver.getPageSource().contains("MA£GORZATA PI£AT"), false);
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
 	String netElementNumber7 = "WARH05MSW1";
-	search.sendKeys(netElementNumber7);
-	
-	Thread.sleep(3000);
-	
+	structureReports.searchInputFillUp(netElementNumber7);
 	Assert.assertEquals(driver.getPageSource().contains("ANDRZEJ MERSKI"), false);
 	
-	structureElementClear.clear();
+	structureReports.searchInputClear();
 	
-}
+	driver.quit();
+	
 	}
+}

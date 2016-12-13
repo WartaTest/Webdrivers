@@ -17,9 +17,6 @@ public class Settlements {
 	public void wealthSearchButton(){
 	WebElement wealthSearchButton;
 	wealthSearchButton = driver.findElement(By.cssSelector("search-combo-box__search__standalone__button"));
-	
-	
+		
 	}
-	
-	
 }

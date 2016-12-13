@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import Base.EAgent.BrowserFactory;
 import Base.EAgent.CockpitOverview360;
 import Base.EAgent.StartPage;
+import Base.EAgent.StructureReports;
 import Base.EAgent.Login.Login;
 import Base.EAgent.Login.Logins.username1;
 
@@ -27,19 +28,16 @@ public class StructureTC1_26 {
 	CockpitOverview360 cockpitOverview360 = new CockpitOverview360();
 	cockpitOverview360.structureToggle();
 	
-	Thread.sleep(3000);
+	StructureReports structureReports = new StructureReports();
 	
 	String netElementNumber1 = "TESH";
-	WebElement search;
-	search = driver.findElement(By.id("search_combo_box_1_input"));
-	search.sendKeys(netElementNumber1);
+	structureReports.searchInputFillUp(netElementNumber1);
 	
-	Thread.sleep(3000);
 	
 	String structureElementValue1 = "MICHA£ WÓJCIK";
-	WebElement structureElement;
-	structureElement = driver.findElement(By.cssSelector(".search-combo-box-node__fullname"));
-	structureElement.equals(structureElementValue1);
+	structureReports.structureReportElementCheck(structureElementValue1);
+	
+	driver.quit();
 	}
 }
 

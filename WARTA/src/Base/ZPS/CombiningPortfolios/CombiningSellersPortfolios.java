@@ -1,5 +1,6 @@
 package Base.ZPS.CombiningPortfolios;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,9 +15,10 @@ public class CombiningSellersPortfolios {
 	
 	public void previousPrimaryAgentNumber(String previousPrimaryNumber){		
 		
-		WebElement previousPrimaryAgentNumber;
-		previousPrimaryAgentNumber = driver.findElement(By.id("idakt"));
-		previousPrimaryAgentNumber.equals(previousPrimaryNumber);
+		String previousPrimaryAgentNumber;
+		previousPrimaryAgentNumber = driver.findElement(By.id("idakt")).getText();
+		Assert.assertTrue(previousPrimaryAgentNumber.contains(previousPrimaryNumber));
+		
 	}
 		
 	public void secondayAgentNumberOption1(){

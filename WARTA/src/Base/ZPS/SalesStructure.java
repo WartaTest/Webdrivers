@@ -1,5 +1,6 @@
 package Base.ZPS;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -266,8 +267,8 @@ public class SalesStructure {
 	}
 	
 	public void person(String name){
-	WebElement person;
-	person = driver.findElement(By.id("idoso"));
-	person.equals(name);
+	String person;
+	person = driver.findElement(By.id("idoso")).getText();
+	Assert.assertTrue(person.contains(name));
 	}
 }
