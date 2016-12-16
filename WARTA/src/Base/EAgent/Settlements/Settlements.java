@@ -48,7 +48,9 @@ public class Settlements {
 	firstElementOfSettlementsSearchClick = driver.findElement(By.className("search-combo-box-node__fullname"));
 	firstElementOfSettlementsSearchClick.click();
 	WebElement wait = (new WebDriverWait(driver, 10))
-			  .until(ExpectedConditions.presenceOfElementLocated(By.className("tile-settlement-summary__agent-context__agent-fullname__value")));;
+			  .until(ExpectedConditions.presenceOfElementLocated(By.className("tile-settlement-summary__agent-context__agent-fullname__value").className("ag-eagent-text-clickable")));;
+					  		  
+
 	
 	}
 }

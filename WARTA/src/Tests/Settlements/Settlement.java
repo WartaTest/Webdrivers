@@ -9,6 +9,7 @@ import Base.EAgent.BrowserFactory;
 import Base.EAgent.StartPage;
 import Base.EAgent.Login.Login;
 import Base.EAgent.Login.Logins.username1;
+import Base.EAgent.Settlements.BrokerAgentSettlementDetailsPage;
 import Base.EAgent.Settlements.BrokerAgentSettlementPage;
 import Base.EAgent.Settlements.Settlements;
 
@@ -34,7 +35,7 @@ public class Settlement {
 		String id;
 		id = " " + "GDAH00230000";
 		BrokerAgentSettlementPage brokerAgentSettlementPage = new BrokerAgentSettlementPage();
-		brokerAgentSettlementPage.roleAndIdCheck((role + id));
+		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
 		
 		WebElement element;
@@ -42,16 +43,20 @@ public class Settlement {
 		String nameAndCompanyFullName;
 		nameAndCompanyFullName = "TOMASZ ZYGMUNT HERSTOWSKI NOWA GENERACJA UBEZPIECZEÑ";
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
-		brokerAgentSettlementPage.nameAndComapnyFullNameCheck(nameAndCompanyFullName);
+		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
-		Thread.sleep(6000);
 		
+		brokerAgentSettlementPage.settlementClickOn();//to nie zadzia³a, potrzeba id
 
-		brokerAgentSettlementPage.settlementClickOn("RSP/16414986/16/1716");
-
-		//brokerAgentSettlementPage.periodCheckValue("01-09-2016 - 15-09-2016");
+		//brokerAgentSettlementPage.periodCheckValue("01-09-2016 - 15-09-2016"); nie dzia³a
 		
+		BrokerAgentSettlementDetailsPage brokerAgentSettlementDetailsPage = new BrokerAgentSettlementDetailsPage();
+		
+		
+		brokerAgentSettlementDetailsPage.redirectionButtonClickAndCheckIfRedirected();
+		
+		brokerAgentSettlementDetailsPage.searchToogleClick();
 			
-		//driver.quit();
+		driver.quit();
 		}
 }

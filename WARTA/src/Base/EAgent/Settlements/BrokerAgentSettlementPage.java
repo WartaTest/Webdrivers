@@ -4,11 +4,19 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Base.EAgent.BrowserFactory;
 
 public class BrokerAgentSettlementPage {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
+	
+	public void backButtonClick(){
+		WebElement backButton;
+		backButton = driver.findElement(By.className("tile-client-summary__back"));
+		backButton.click();
+	}
 	
 	public void roleNameCheck(String roleName){
 		String roleNameValue;
@@ -16,14 +24,14 @@ public class BrokerAgentSettlementPage {
 		Assert.assertTrue(roleNameValue.contains(roleName));
 		}
 	
-	public void roleAndIdCheck(String roleAndId){
+	public void roleAndIdTextCheck(String roleAndId){
 		
 		String roleAndIdValue;
 		roleAndIdValue = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-username")).getText();
 		Assert.assertTrue(roleAndIdValue.contains(roleAndId));
 	}
 	
-	public void nameAndComapnyFullNameCheck(String nameAndCompanyFullName){
+	public void nameAndComapnyFullNameTextCheck(String nameAndCompanyFullName){
 	String nameAndCompanyName;
 	nameAndCompanyName = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value")).getText();
 	Assert.assertTrue(nameAndCompanyName.contains(nameAndCompanyFullName));	
@@ -158,9 +166,17 @@ public class BrokerAgentSettlementPage {
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void settlementClickOn(String link){
+	public void settlementClickOn(){
 			WebElement settlement;
-			settlement = driver.findElement(By.cssSelector("//span[contains(text(),'"+link+"')]"));
+			settlement = driver.findElement(By.className("ag-eagent-text-clickable"));
 			settlement.click();
+			
+			WebElement wait = (new WebDriverWait(driver, 10))
+					  .until(ExpectedConditions.presenceOfElementLocated(By.className("settlement-details-panel__item__content__info__icon")));;
+						
 	}
-}
+	
+	public void naPozniej(String link){
+		WebElement settlement;
+	settlement = driver.findElement(By.xpath("//span[contains('"+link+"')]"));
+}}
