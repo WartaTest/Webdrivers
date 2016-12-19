@@ -144,15 +144,24 @@ public class BrokerAgentSettlementDetailsPage {
 	}
 	
 	public void redirectionButtonClickAndCheckIfRedirected(){
+		String parentHandle = driver.getWindowHandle();
 		WebElement redirectionButton;
 		redirectionButton = driver.findElement(By.className("settlement-details-panel__item__content__info__icon"));
 		redirectionButton.click();
+		
+		
+		String eAgentURL = "https://eagenttst.warta.pl/";
 	
-		String winHandleBefore = driver.getWindowHandle();
-		 for (String winHandle : driver.getWindowHandles()) {
-		   driver.switchTo().window(winHandle);
-		   break;
-		 }
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle);
+		    String currentURL = driver.getCurrentUrl();
+			String ePlatformaURL = "https://eplatforma.warta.pl/t2013/";
+			Assert.assertTrue(currentURL.contains(ePlatformaURL));	
+		}
+		driver.close(); 
+		driver.switchTo().window(parentHandle);
+		String currentURL = driver.getCurrentUrl();
+		Assert.assertTrue(currentURL.contains(eAgentURL));
 	}
 		
 
