@@ -26,6 +26,7 @@ public class BrokerAgentSettlementPage {
 	
 	public void roleAndIdTextCheck(String roleAndId){
 		
+		
 		String roleAndIdValue;
 		roleAndIdValue = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-username")).getText();
 		Assert.assertTrue(roleAndIdValue.contains(roleAndId));
@@ -125,7 +126,7 @@ public class BrokerAgentSettlementPage {
 			//brak id/klasy/cssSelektora
 }
 
-	public void commissionCheckText(){
+	public void commissionCheckText(String text){
 			//brak id/klasy/cssSelektora
 }
 
@@ -176,7 +177,7 @@ public class BrokerAgentSettlementPage {
 						
 	}
 	
-	public void naPozniej(String link){
+	public void currentURLcontains(String link){
 		WebElement settlement;
 	settlement = driver.findElement(By.xpath("//span[contains('"+link+"')]"));
 }}

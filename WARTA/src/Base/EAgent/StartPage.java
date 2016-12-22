@@ -47,4 +47,30 @@ public class StartPage {
 	WebElement wait = (new WebDriverWait(driver, 10))
 			  .until(ExpectedConditions.presenceOfElementLocated(By.className("search-combo-box--expanded__input__standalone")));;	
 	}
+	
+	public void searchMagnifierIconClickOn(){
+	WebElement searchMagnifierIcon;
+	searchMagnifierIcon = driver.findElement(By.className("header-wrapper__top-menu__addition__link__icon--search"));
+	searchMagnifierIcon.click();
+	}
+	
+	public void searchCleintsAndPoliciesFromTopMenuInputFillUp(){
+	WebElement searchCleintsAndPoliciesFromTopMenuInput;
+	searchCleintsAndPoliciesFromTopMenuInput = driver.findElement(By.className("quick-search__main__input__form-control "));
+	searchCleintsAndPoliciesFromTopMenuInput.click();
+		}
+	
+	public void searchCleintsAndPoliciesFromTopMenuButtonClickOn(){
+	WebElement searchCleintsAndPoliciesFromTopMenu;
+	searchCleintsAndPoliciesFromTopMenu = driver.findElement(By.className("quick-search__main__input"));
+	searchCleintsAndPoliciesFromTopMenu.click();
+		}
+	
+	public void cancelSearchFromTopMenuClickOn(){
+	WebElement cancelSearchFromTopMenu;
+	cancelSearchFromTopMenu = driver.findElement(By.className("quick-search__main__close-button"));
+	cancelSearchFromTopMenu.click();
+	
+	
+		}
 }

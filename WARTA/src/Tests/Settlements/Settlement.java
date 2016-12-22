@@ -23,6 +23,8 @@ public class Settlement {
 		Login login = new Login();
 		login.RunLogin(username1.CENTRALA.toString);
 		
+		
+		
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
 		
