@@ -55,7 +55,7 @@ public class ClientsDetailPage {
 		List <WebElement> clientsDetailsPageIcons = driver.findElements(By.className("tile-client-summary__policies__policy__icon"));
 		int a=clientsDetailsPageIcons.size();
 		for(int b=1;b<=a;b++){
-			clientsDetailsPageIcons = driver.findElements(By.className("open"));
+			clientsDetailsPageIcons = driver.findElements(By.className("tile-client-summary__policies__policy__icon"));
 			clientsDetailsPageIcons.get(b).isDisplayed();
 	}	
 }

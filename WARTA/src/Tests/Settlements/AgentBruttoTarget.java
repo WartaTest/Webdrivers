@@ -15,7 +15,7 @@ import Base.EAgent.Settlements.Settlements;
 
 import java.lang.System;
 
-public class Settlement {
+public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	@Test
 	public void Test() throws InterruptedException{
@@ -48,7 +48,7 @@ public class Settlement {
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
 		
-		brokerAgentSettlementPage.settlementClickOn();//to nie zadzia³a, potrzeba id
+		brokerAgentSettlementPage.settlementClickOn(); //to nie zadzia³a, potrzeba id
 
 		//brokerAgentSettlementPage.periodCheckValue("01-09-2016 - 15-09-2016"); nie dzia³a
 		
