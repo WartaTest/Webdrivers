@@ -16,7 +16,7 @@ public class Logins {
 		        public String toString() {
 		            return "tstnfe01";
 		        }
-		    },
+		    }, 
 		    
 		    SALES_MANAGER {
 		        public String toString() {
@@ -28,7 +28,7 @@ public class Logins {
 	public static enum password1 {
 	    CENTRALA {
 	        public String toString() {
-	            return "234W@rta";
+	            return "Warta098";
 	        }
 	    },
 

@@ -1,6 +1,7 @@
 package tests.structure;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +16,18 @@ import base.eAgentObjects.StartPage;
 import base.eAgentObjects.StructureReports;
 import base.eAgentObjects.login.Login;
 import base.eAgentObjects.login.Logins.username1;
+import base.zpsObjects.changesForTestCases.ForTC1_14_to_1_15;
 
 public class StructureTC1_12_to_1_15 {
+	
+	@Before
+	public void changesForStructureTestCasesTC1_14_to_1_15(){
+		
+	ForTC1_14_to_1_15 forTC1_14_to_1_15 = new ForTC1_14_to_1_15();
+	forTC1_14_to_1_15.forTC1_14_to_1_15();	
+		
+	}
+	
 	@Test
 	public void structureTC1_12_to_1_15() throws InterruptedException{
 	

@@ -18,6 +18,8 @@ import java.lang.System;
 
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
+	private int x = 1000;
+	private String z = "";
 	@Test
 	public void Test() throws InterruptedException{
 		
@@ -29,14 +31,21 @@ public class AgentBruttoTarget {
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
 		
+		/*
+		Daro Daro = new Daro();
+		Daro.id(x, y);
+			
+		for (x = 0; x < IDArray.length; x++){
+		*/
 		Settlements settlements = new Settlements();
-		settlements.settlementsSearchInputFillUp("5504071");
+		//settlements.settlementsSearchInputFillUp(IDArray[x]);
 		settlements.firstElementOfSettlementsSearchClick();
 		
 		String role;
-		role = "Agent:";
+		role = "Agent:";//z
 		String id;
 		id = " " + "GDAH00230000";
+		//id1 = " " + (IDArray1[x]);
 		BrokerAgentSettlementPage brokerAgentSettlementPage = new BrokerAgentSettlementPage();
 		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
@@ -45,6 +54,7 @@ public class AgentBruttoTarget {
 		element = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value"));
 		String nameAndCompanyFullName;
 		nameAndCompanyFullName = "TOMASZ ZYGMUNT HERSTOWSKI NOWA GENERACJA UBEZPIECZEÑ";
+		//nameAndCompanyFullName = IDArray[7];
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
@@ -62,4 +72,5 @@ public class AgentBruttoTarget {
 			
 		driver.quit();
 		}
+	//}
 }
