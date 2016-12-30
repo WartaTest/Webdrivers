@@ -1,5 +1,7 @@
 package base.eAgentObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,16 +56,16 @@ public class StartPage {
 	searchMagnifierIcon.click();
 	}
 	
-	public void searchCleintsAndPoliciesFromTopMenuInputFillUp(){
-	WebElement searchCleintsAndPoliciesFromTopMenuInput;
-	searchCleintsAndPoliciesFromTopMenuInput = driver.findElement(By.className("quick-search__main__input__form-control "));
-	searchCleintsAndPoliciesFromTopMenuInput.click();
+	public void searchClientsAndPoliciesFromTopMenuInputFillUp(){
+	WebElement searchClientsAndPoliciesFromTopMenuInput;
+	searchClientsAndPoliciesFromTopMenuInput = driver.findElement(By.className("quick-search__main__input__form-control "));
+	searchClientsAndPoliciesFromTopMenuInput.click();
 		}
 	
-	public void searchCleintsAndPoliciesFromTopMenuButtonClickOn(){
-	WebElement searchCleintsAndPoliciesFromTopMenu;
-	searchCleintsAndPoliciesFromTopMenu = driver.findElement(By.className("quick-search__main__input"));
-	searchCleintsAndPoliciesFromTopMenu.click();
+	public void searchClientsAndPoliciesFromTopMenuButtonClickOn(){
+	WebElement searchClientsAndPoliciesFromTopMenuButton;
+	searchClientsAndPoliciesFromTopMenuButton = driver.findElement(By.className("quick-search__main__input"));
+	searchClientsAndPoliciesFromTopMenuButton.click();
 		}
 	
 	public void cancelSearchFromTopMenuClickOn(){
@@ -71,6 +73,16 @@ public class StartPage {
 	cancelSearchFromTopMenu = driver.findElement(By.className("quick-search__main__close-button"));
 	cancelSearchFromTopMenu.click();
 	
+	}
 	
-		}
+	public void clientsSearchResultClickOn(int number){
+	List <WebElement> clientsSearchResult = driver.findElements(By.className("quick-search__search-response__results-list__item__name"));	
+	clientsSearchResult.get(number).click();	
+	}
+	
+	public void clientsSearchResultListPaginationClickOn(int number){
+		
+	List <WebElement> clientsSearchResult = driver.findElements(By.className("quick-search__search-response__results-list__pagination__page"));	
+	clientsSearchResult.get(number).click();	
+	}
 }
