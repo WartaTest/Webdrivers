@@ -127,5 +127,6 @@ public class SanityTest {
 		
 		brokerAgentSettlementPage.settlementClickOn();
 		
+		driver.quit();
 	}
 }

@@ -14,7 +14,6 @@ import base.eAgentObjects.settlements.Settlements;
 
 import org.junit.Test;
 
-import java.lang.System;
 
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
@@ -25,9 +24,7 @@ public class AgentBruttoTarget {
 		
 		Login login = new Login();
 		login.RunLogin(username1.CENTRALA.toString);
-		
-		
-		
+			
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
 		
@@ -71,6 +68,7 @@ public class AgentBruttoTarget {
 		brokerAgentSettlementDetailsPage.searchToogleClick();
 			
 		driver.quit();
+		
 		}
 	//}
 }
