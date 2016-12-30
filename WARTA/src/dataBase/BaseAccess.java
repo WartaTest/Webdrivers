@@ -1,7 +1,8 @@
 package dataBase;
 
 import java.sql.DriverManager;
-import constants.Constant;
+
+import dataBase.constants.Constant;
 
 public class BaseAccess {
 

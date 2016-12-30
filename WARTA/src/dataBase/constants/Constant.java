@@ -1,4 +1,4 @@
-package constants;
+package dataBase.constants;
 
 import java.io.IOException;
 
