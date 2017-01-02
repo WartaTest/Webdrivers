@@ -24,11 +24,11 @@ public class StructureReports {
 		
 	}
 	
-	public void structureReportElementCheck(String value){
+	public void structureReportElementCheck(String structureReportElementValue){
 		
 		String structureElement;
 		structureElement = driver.findElement(By.cssSelector(".search-combo-box-node__fullname")).getText();
-		Assert.assertTrue(structureElement.contains(value));
+		Assert.assertTrue(structureElement.contains(structureReportElementValue));
 	}
 	
 }

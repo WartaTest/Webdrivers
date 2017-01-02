@@ -34,7 +34,7 @@ public class AgentBruttoTarget {
 		
 		
 		RunTest runTest = new RunTest();
-		//runTest.main(20, SubjectType[0], "SIMPLIFIED_NETTO");
+		//runTest.main();
 					
 		/*
 		Daro Daro = new Daro();
@@ -63,35 +63,37 @@ public class AgentBruttoTarget {
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
-//		brokerAgentSettlementPage.balancePeriodCheckText(text);
-//		brokerAgentSettlementPage.balancePeriodCheckValue(value);
-//		brokerAgentSettlementPage.closedSettlementPeriods(text);
-//		brokerAgentSettlementPage.collectionCheckText(text);
-//		brokerAgentSettlementPage.collectionCheckValue(value);
-//		brokerAgentSettlementPage.commisionTextCheck(text);
-//		brokerAgentSettlementPage.commisionValueCheck(value);
-//		brokerAgentSettlementPage.commissionCheckText(text);
-//		brokerAgentSettlementPage.commissionCheckValue(value);
-//		brokerAgentSettlementPage.debtCollectionLimitationTextCheck(text);
-//		brokerAgentSettlementPage.debtCollectionTextCheck(text);
-//		brokerAgentSettlementPage.debtCollectionValueCheck(value);
-//		brokerAgentSettlementPage.lastPeriodBalanceTextCheck(text);
-//		brokerAgentSettlementPage.lastPeriodBalanceValueCheck(value);
-//		brokerAgentSettlementPage.leftToPayCheckText(text);
-//		brokerAgentSettlementPage.leftToPayCheckValue(value);
-//		brokerAgentSettlementPage.periodCheckText(text);
-//		brokerAgentSettlementPage.roleAndIdTextCheck(roleAndId);
+//		brokerAgentSettlementPage.balancePeriodCheckText(balancePeriodCheckText);;
+//		brokerAgentSettlementPage.balancePeriodCheckValue(balancePeriodCheckValue);
+//		brokerAgentSettlementPage.closedSettlementPeriods(closedSettlementPeriods);
+//		brokerAgentSettlementPage.collectionCheckText(collectionText);
+//		brokerAgentSettlementPage.collectionCheckValue(collectionValue);
+//		brokerAgentSettlementPage.commissionCheckText(commissionCheckText);
+//		brokerAgentSettlementPage.commissionCheckValue(commissionCheckValue);
+//		brokerAgentSettlementPage.commissionTextCheck(commisionText);
+//		brokerAgentSettlementPage.commissionValueCheck(commisionValue);
+//		brokerAgentSettlementPage.debtCollectionLimitationTextCheck(debtCollectionLimitationText);
+//		brokerAgentSettlementPage.debtCollectionTextCheck(debtCollectionText);
+//		brokerAgentSettlementPage.debtCollectionValueCheck(debtCollectionValue);
+//		brokerAgentSettlementPage.lastPeriodBalanceTextCheck(lastPeriodBalanceText);
+//		brokerAgentSettlementPage.lastPeriodBalanceValueCheck(lastPeriodBalanceValue);
+//		brokerAgentSettlementPage.leftToPayCheckText(leftToPayCheck);
+//		brokerAgentSettlementPage.leftToPayCheckValue(leftToPayCheckValue);
+//		brokerAgentSettlementPage.periodCheckText(periodCheckText);
+//		brokerAgentSettlementPage.periodCheckValue(periodCheckValue);
+//		brokerAgentSettlementPage.roleAndIdTextCheck(roleAndIdText);
 //		brokerAgentSettlementPage.roleNameCheck(roleName);
-//		brokerAgentSettlementPage.settlementApproachTextCheck(text);
-//		brokerAgentSettlementPage.settlementApproachValueCheck(value);
-//		brokerAgentSettlementPage.settlementCheckText(text);
-//		brokerAgentSettlementPage.settlementCheckValue(value);
-//		brokerAgentSettlementPage.statusCheckText(text);
-//		brokerAgentSettlementPage.toPayTextCheck(text);
-//		brokerAgentSettlementPage.toPayValueCheck(value);
-//		brokerAgentSettlementPage.totalBalanceTextCheck(text);
-//		brokerAgentSettlementPage.totalBalanceValueCheck(value);
-//		
+//		brokerAgentSettlementPage.settlementApproachTextCheck(settlementApproachText);
+//		brokerAgentSettlementPage.settlementApproachValueCheck(settlementApproachValue);
+//		brokerAgentSettlementPage.settlementCheckText(settlementCheckText);
+//		brokerAgentSettlementPage.settlementCheckValue(settlementCheckValue);
+//		brokerAgentSettlementPage.statusCheckText(statusCheckText);
+//		brokerAgentSettlementPage.statusCheckValue(statusCheckValue);
+//		brokerAgentSettlementPage.toPayTextCheck(toPayText);
+//		brokerAgentSettlementPage.toPayValueCheck(toPayValue);
+//		brokerAgentSettlementPage.totalBalanceTextCheck(totalBalanceText);
+//		brokerAgentSettlementPage.totalBalanceValueCheck(totalBalanceValue);
+		
 		
 		brokerAgentSettlementPage.settlementClickOn(); //to nie zadzia³a, potrzeba id
 
@@ -99,23 +101,24 @@ public class AgentBruttoTarget {
 		
 		BrokerAgentSettlementDetailsPage brokerAgentSettlementDetailsPage = new BrokerAgentSettlementDetailsPage();
 		
-//		brokerAgentSettlementDetailsPage.accountNumberTextCheck(text);
-//		brokerAgentSettlementDetailsPage.accountNumberValueCheck();
-//		brokerAgentSettlementDetailsPage.AmountTextCheck(text);
-//		brokerAgentSettlementDetailsPage.AmountValueCheck(value);
-//		brokerAgentSettlementDetailsPage.balancePeriodCheckText(text);
-//		brokerAgentSettlementDetailsPage.balancePeriodCheckValue(value);
-//		brokerAgentSettlementDetailsPage.collectionCheckText(text);
-//		brokerAgentSettlementDetailsPage.collectionCheckValue(value);
-//		brokerAgentSettlementDetailsPage.collectionInPolicyCheckText(text);
-//		brokerAgentSettlementDetailsPage.commissionCheckText(text);
-//		brokerAgentSettlementDetailsPage.commissionCheckValueWithOK(value);
-//		brokerAgentSettlementDetailsPage.commissionCheckValueWithoutOK(value);
-//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckText(text);
-//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckValue(value);
+//		brokerAgentSettlementDetailsPage.accountNumberTextCheck(accountNumberText);
+//		brokerAgentSettlementDetailsPage.accountNumberValueCheck(accountNumberValue);
+//		brokerAgentSettlementDetailsPage.AmountTextCheck(AmountText);
+//		brokerAgentSettlementDetailsPage.AmountValueCheck(AmountValue);
+//		brokerAgentSettlementDetailsPage.balancePeriodCheckText(balancePeriodCheck);
+//		brokerAgentSettlementDetailsPage.balancePeriodCheckValue(balancePeriodCheckValue);
+//		brokerAgentSettlementDetailsPage.collectionCheckText(collectionText);
+//		brokerAgentSettlementDetailsPage.collectionCheckValue(collectionValue);
+//		brokerAgentSettlementDetailsPage.collectionInPolicyCheckText(collectionInPolicyText);
+//		brokerAgentSettlementDetailsPage.collectionInPolicyCheckValue(collectionInPolicyValue);
+//		brokerAgentSettlementDetailsPage.commissionCheckText(commissionText);
+//		brokerAgentSettlementDetailsPage.commissionCheckValueWithOK(commissionValueWithOK);
+//		brokerAgentSettlementDetailsPage.commissionCheckValueWithoutOK(commissionValueWithoutOK);
+//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckText(commissionInPolicyText);
+//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckValue(commissionInPolicyValue);
 //		brokerAgentSettlementDetailsPage.csvDocumentButtonCheckIfClickable();
-//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputCheckText(text);
-//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputFillUp(value);
+//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputCheckText(insurersLastNameAndNameInSearchInputText);
+//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputFillUp(insurersLastNameAndNameInSearchInputValue);
 //		brokerAgentSettlementDetailsPage.nameAndComapnyFullNameCheck(nameAndCompanyFullName);
 //		brokerAgentSettlementDetailsPage.
 //		brokerAgentSettlementDetailsPage.

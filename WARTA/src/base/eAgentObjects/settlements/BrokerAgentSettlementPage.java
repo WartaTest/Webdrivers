@@ -84,11 +84,11 @@ public class BrokerAgentSettlementPage {
 		Assert.assertTrue(totalBalance.contains(lastPeriodBalanceValue));
 	}
 	
-	public void commisionTextCheck(String commisionText){
+	public void commissionTextCheck(String commisionText){
 		//nie by³o widoczne, potrzebne rozliczanie nontarget
 	}
 	
-	public void commisionValueCheck(String commisionValue){
+	public void commissionValueCheck(String commisionValue){
 		//nie by³o widoczne, potrzebne rozliczanie nontarget
 	}
 	
@@ -122,7 +122,7 @@ public class BrokerAgentSettlementPage {
 			//brak id/klasy/cssSelektora
 }
 
-	public void collectionCheckText(String leftToPayCheck){
+	public void collectionCheckText(String collectionText){
 			//brak id/klasy/cssSelektora
 }
 
@@ -154,7 +154,7 @@ public class BrokerAgentSettlementPage {
 		
 	}
 	
-	public void collectionCheckValue(String collectionCheckValue){
+	public void collectionCheckValue(String collectionValue){
 			//brak id/klasy/cssSelektora
 		
 	}

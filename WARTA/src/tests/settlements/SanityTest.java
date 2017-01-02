@@ -51,10 +51,10 @@ public class SanityTest {
 		brokerAgentSettlementPage.collectionCheckValue(collectionCheckValue);
 		
 		String commisionTextCheck = null;
-		brokerAgentSettlementPage.commisionTextCheck(commisionTextCheck);
+		brokerAgentSettlementPage.commissionTextCheck(commisionTextCheck);
 		
 		String commisionValueCheck = null;
-		brokerAgentSettlementPage.commisionValueCheck(commisionValueCheck);
+		brokerAgentSettlementPage.commissionValueCheck(commisionValueCheck);
 		
 		String commissionCheckText = null;
 		brokerAgentSettlementPage.commissionCheckText(commissionCheckText);

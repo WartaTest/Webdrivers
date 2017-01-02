@@ -75,14 +75,14 @@ public class StartPage {
 	
 	}
 	
-	public void clientsSearchResultClickOn(int number){
+	public void clientsSearchResultClickOn(int SearchResultNumber){
 	List <WebElement> clientsSearchResult = driver.findElements(By.className("quick-search__search-response__results-list__item__name"));	
-	clientsSearchResult.get(number).click();	
+	clientsSearchResult.get(SearchResultNumber).click();	
 	}
 	
-	public void clientsSearchResultListPaginationClickOn(int number){
+	public void clientsSearchResultListPaginationClickOn(int PaginationNumber){
 		
 	List <WebElement> clientsSearchResult = driver.findElements(By.className("quick-search__search-response__results-list__pagination__page"));	
-	clientsSearchResult.get(number).click();	
+	clientsSearchResult.get(PaginationNumber).click();	
 	}
 }
