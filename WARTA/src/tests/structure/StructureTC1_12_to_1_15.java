@@ -30,7 +30,7 @@ public class StructureTC1_12_to_1_15 {
 	WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
 	Login login = new Login();
-	login.RunLogin(username1.CENTRALA.toString);
+	login.RunLogin(username1.CENTRALA);
 	
 	StartPage startPage = new StartPage();
 	startPage.overview360GoTo();

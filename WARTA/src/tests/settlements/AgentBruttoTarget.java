@@ -19,14 +19,14 @@ import org.junit.Test;
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
-	private String SubjectType = "AGENT"; 
-	private int x = 1000;
-	private String z = "";
+	// String SubjectType = "AGENT"; 
+	//private int x = 1000;
+	//private String z = "";
 	@Test
 	public void Test() throws InterruptedException{
 		
 		Login login = new Login();
-		login.RunLogin(username1.CENTRALA.toString);
+		login.RunLogin(username1.CENTRALA);
 			
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();

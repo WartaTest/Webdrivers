@@ -21,14 +21,14 @@ public class SanityTest {
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
 		
+		String producerStateId = "5504071";
+		
 		Settlements settlements = new Settlements();
-		settlements.settlementsSearchInputFillUp("5504071");
+		settlements.settlementsSearchInputFillUp(producerStateId);
 		settlements.firstElementOfSettlementsSearchClick();
 		
-		String role;
-		role = "Agent:";
-		String id;
-		id = " " + "GDAH00230000";
+		String role = "Agent:";
+		String id =  " " + "GDAH00230000";
 		BrokerAgentSettlementPage brokerAgentSettlementPage = new BrokerAgentSettlementPage();
 		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
