@@ -11,12 +11,15 @@ import base.eAgentObjects.login.Logins.username1;
 import base.eAgentObjects.settlements.BrokerAgentSettlementDetailsPage;
 import base.eAgentObjects.settlements.BrokerAgentSettlementPage;
 import base.eAgentObjects.settlements.Settlements;
+import dataBase.RunTest;
 
 import org.junit.Test;
 
 
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
+	
+	//private String SubjectType = "AGENT"; 
 	private int x = 1000;
 	private String z = "";
 	@Test
@@ -28,6 +31,11 @@ public class AgentBruttoTarget {
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
 		
+		
+		
+//		RunTest runTest = new RunTest();
+//		runTest.main("AGENT", 2);
+					
 		/*
 		Daro Daro = new Daro();
 		Daro.id(x, y);
