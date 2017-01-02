@@ -32,97 +32,97 @@ public class SanityTest {
 		BrokerAgentSettlementPage brokerAgentSettlementPage = new BrokerAgentSettlementPage();
 		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
-		String link = null;
+		String link = "https://eagenttst.warta.pl/view360/";
 		brokerAgentSettlementPage.currentURLcontains(link);
 		
-		String balancePeriodCheckText = null;
+		String balancePeriodCheckText = "";
 		brokerAgentSettlementPage.balancePeriodCheckText(balancePeriodCheckText);
 		
-		String balancePeriodCheckValue = null;
+		String balancePeriodCheckValue = "";
 		brokerAgentSettlementPage.balancePeriodCheckValue(balancePeriodCheckValue);
 		
-		String text = null;
-		brokerAgentSettlementPage.closedSettlementPeriods(text);
+		String closedSettlementPeriods = "";
+		brokerAgentSettlementPage.closedSettlementPeriods(closedSettlementPeriods);
 		
-		String collectionCheckText = null;
+		String collectionCheckText = "";
 		brokerAgentSettlementPage.collectionCheckText(collectionCheckText);
 		
-		String collectionCheckValue = null;
+		String collectionCheckValue = "";
 		brokerAgentSettlementPage.collectionCheckValue(collectionCheckValue);
 		
-		String commisionTextCheck = null;
+		String commisionTextCheck = "";
 		brokerAgentSettlementPage.commissionTextCheck(commisionTextCheck);
 		
-		String commisionValueCheck = null;
+		String commisionValueCheck = "";
 		brokerAgentSettlementPage.commissionValueCheck(commisionValueCheck);
 		
-		String commissionCheckText = null;
+		String commissionCheckText = "";
 		brokerAgentSettlementPage.commissionCheckText(commissionCheckText);
 		
-		String debtCollectionLimitationTextCheck = null;
+		String debtCollectionLimitationTextCheck = "";
 		brokerAgentSettlementPage.debtCollectionLimitationTextCheck(debtCollectionLimitationTextCheck);
 		
-		String debtCollectionTextCheck = null;
+		String debtCollectionTextCheck = "";
 		brokerAgentSettlementPage.debtCollectionTextCheck(debtCollectionTextCheck);
 		
-		String debtCollectionValueCheck = null;
+		String debtCollectionValueCheck = "";
 		brokerAgentSettlementPage.debtCollectionValueCheck(debtCollectionValueCheck);
 		
-		String lastPeriodBalanceTextCheck = null;
+		String lastPeriodBalanceTextCheck = "";
 		brokerAgentSettlementPage.lastPeriodBalanceTextCheck(lastPeriodBalanceTextCheck);
 		
-		String lastPeriodBalanceValueCheck = null;
+		String lastPeriodBalanceValueCheck = "";
 		brokerAgentSettlementPage.lastPeriodBalanceValueCheck(lastPeriodBalanceValueCheck);
 		
-		String leftToPayCheckText = null;
+		String leftToPayCheckText = "";
 		brokerAgentSettlementPage.leftToPayCheckText(leftToPayCheckText);
 		
-		String leftToPayCheckValue = null;
+		String leftToPayCheckValue = "";
 		brokerAgentSettlementPage.leftToPayCheckValue(leftToPayCheckValue);
 		
-		String nameAndComapnyFullNameTextCheck = null;
+		String nameAndComapnyFullNameTextCheck = "";
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndComapnyFullNameTextCheck);
 		
-		String periodCheckText = null;
+		String periodCheckText = "";
 		brokerAgentSettlementPage.periodCheckText(periodCheckText);
 		
-		String periodCheckValue = null;
+		String periodCheckValue = "";
 		brokerAgentSettlementPage.periodCheckValue(periodCheckValue);
 		
-		String roleAndIdTextCheck = null;
+		String roleAndIdTextCheck = "";
 		brokerAgentSettlementPage.roleAndIdTextCheck(roleAndIdTextCheck);
 		
-		String roleNameCheck = null;
+		String roleNameCheck = "";
 		brokerAgentSettlementPage.roleNameCheck(roleNameCheck);
 		
-		String settlementApproachTextCheck = null;
+		String settlementApproachTextCheck = "";
 		brokerAgentSettlementPage.settlementApproachTextCheck(settlementApproachTextCheck);
 		
-		String settlementApproachValueCheck = null;
+		String settlementApproachValueCheck = "";
 		brokerAgentSettlementPage.settlementApproachValueCheck(settlementApproachValueCheck);
 		
-		String settlementCheckText = null;
+		String settlementCheckText = "";
 		brokerAgentSettlementPage.settlementCheckText(settlementCheckText);
 		
-		String settlementCheckValue = null;
+		String settlementCheckValue = "";
 		brokerAgentSettlementPage.settlementCheckValue(settlementCheckValue);
 		
-		String statusCheckText = null;
+		String statusCheckText = "";
 		brokerAgentSettlementPage.statusCheckText(statusCheckText);
 		
-		String statusCheckValue = null;
+		String statusCheckValue = "";
 		brokerAgentSettlementPage.statusCheckValue(statusCheckValue);
 		
-		String toPayTextCheck = null;
+		String toPayTextCheck = "";
 		brokerAgentSettlementPage.toPayTextCheck(toPayTextCheck);
 		
-		String toPayValueCheck = null;
+		String toPayValueCheck = "";
 		brokerAgentSettlementPage.toPayValueCheck(toPayValueCheck);
 		
-		String totalBalanceTextCheck = null;
+		String totalBalanceTextCheck = "";
 		brokerAgentSettlementPage.totalBalanceTextCheck(totalBalanceTextCheck);
 		
-		String totalBalanceValueCheck = null;
+		String totalBalanceValueCheck = "";
 		brokerAgentSettlementPage.totalBalanceValueCheck(totalBalanceValueCheck);
 		
 		brokerAgentSettlementPage.settlementClickOn();

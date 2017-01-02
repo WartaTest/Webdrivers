@@ -20,7 +20,7 @@ public class Login {
 
 	public void RunLogin(username1 tostring) throws InterruptedException{
 		WebDriver driver = BrowserFactory.getBrowser("Firefox");
-		driver.get("https://eagenttst.warta.pl");
+		driver.get("xxx");
 
 		
 		WebElement username;
