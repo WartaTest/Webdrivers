@@ -14,155 +14,155 @@ public class Clients {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
 	
-	public void surenameOrCompanyNameFillUp(String value){
+	public void surenameOrCompanyNameFillUp(String surenameOrCompanyNameValue){
 	List <WebElement> surenameOrCompanyName = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	surenameOrCompanyName.get(0).sendKeys(value);	
+	surenameOrCompanyName.get(0).sendKeys(surenameOrCompanyNameValue);	
 		
 	}
 	
 	
 	
-	public void nameFillUp(String value){
+	public void nameFillUp(String nameValue){
 	List <WebElement> name = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	name.get(1).sendKeys(value);	
+	name.get(1).sendKeys(nameValue);	
 		
 	}
 	
 	
 	
-	public void peselOrRegonOrNipFillUp(String value){
+	public void peselOrRegonOrNipFillUp(String peselOrRegonOrNipValue){
 	List <WebElement> peselOrRegonOrNip = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	peselOrRegonOrNip.get(2).sendKeys(value);	
+	peselOrRegonOrNip.get(2).sendKeys(peselOrRegonOrNipValue);	
 		
 	}
 	
 	
 	
-	public void policyNumberFillUp(String value){
+	public void policyNumberFillUp(String policyNumberValue){
 	List <WebElement> policyNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	policyNumber.get(3).sendKeys(value);	
+	policyNumber.get(3).sendKeys(policyNumberValue);	
 		
 	}
 	
 	
 	
-	public void registrationNumberFillUp(String value){
+	public void registrationNumberFillUp(String registrationNumberValue){
 	List <WebElement> registrationNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	registrationNumber.get(4).sendKeys(value);	
+	registrationNumber.get(4).sendKeys(registrationNumberValue);	
 		
 	}
 	
 	
 	
-	public void emailAdresFillUp(String value){
+	public void emailAdresFillUp(String emailAdresValue){
 	List <WebElement> emailAdres = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	emailAdres.get(5).sendKeys(value);	
+	emailAdres.get(5).sendKeys(emailAdresValue);	
 		
 	}
 	
 	
 	
-	public void phoneNumberFillUp(String value){
+	public void phoneNumberFillUp(String phoneNumberValue){
 	List <WebElement> nameOrCompanyName = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	nameOrCompanyName.get(6).sendKeys(value);	
+	nameOrCompanyName.get(6).sendKeys(phoneNumberValue);	
 		
 	}
 	
 	
 	
-	public void vipOrPlatinumCardNumberFillUp(String value){
+	public void vipOrPlatinumCardNumberFillUp(String vipOrPlatinumCardNumberValue){
 	List <WebElement> vipOrPlatinumCardNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	vipOrPlatinumCardNumber.get(7).sendKeys(value);	
+	vipOrPlatinumCardNumber.get(7).sendKeys(vipOrPlatinumCardNumberValue);	
 		
 	}
 	
 	
 	
-	public void vinNumberFillUp(String value){
+	public void vinNumberFillUp(String vinNumberValue){
 	List <WebElement> vinNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	vinNumber.get(8).sendKeys(value);	
+	vinNumber.get(8).sendKeys(vinNumberValue);	
 		
 	}
 	
 	
 	
-	public void clientTypeChooseFromDropdownList(String value){
+	public void clientTypeChooseFromDropdownList(String clientTypeChooseValue){
 	WebElement clientTypeChoose = driver.findElement(By.className("grid-search__search__criteria__dropdown-button"));
 	Select selectThis = new Select(clientTypeChoose);
-	selectThis.selectByVisibleText(value);
+	selectThis.selectByVisibleText(clientTypeChooseValue);
 		
 	}
 	
 	
 	
-	public void cityFillUp(String value){
+	public void cityFillUp(String cityValue){
 	List <WebElement> city = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	city.get(9).sendKeys(value);	
+	city.get(9).sendKeys(cityValue);	
 		
 	}
 	
 	
 	
-	public void streetFillUp(String value){
+	public void streetFillUp(String streetValue){
 	List <WebElement> street = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	street.get(10).sendKeys(value);	
+	street.get(10).sendKeys(streetValue);	
 		
 	}
 	
 	
 	
-	public void houseNumberFillUp(String value){
+	public void houseNumberFillUp(String houseNumberValue){
 	List <WebElement> houseNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	houseNumber.get(11).sendKeys(value);	
+	houseNumber.get(11).sendKeys(houseNumberValue);	
 		
 	}
 	
 	
 	
-	public void homeNumberFillUp(String value){
+	public void homeNumberFillUp(String homeNumberValue){
 	List <WebElement> homeNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	homeNumber.get(12).sendKeys(value);	
+	homeNumber.get(12).sendKeys(homeNumberValue);	
 		
 	}
 	
 	
 	
-	public void zipCodeNumberFillUp(String value){
+	public void zipCodeNumberFillUp(String zipCodeNumberValue){
 	List <WebElement> zipCodeNumber = driver.findElements(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
-	zipCodeNumber.get(13).sendKeys(value);	
+	zipCodeNumber.get(13).sendKeys(zipCodeNumberValue);	
 		
 	}
 	
 	
 	
-	public void dateOfBirthFromFillUp(String value){
+	public void dateOfBirthFromFillUp(String dateOfBirthFromValue){
 	List <WebElement> dateOfBirthFrom = driver.findElements(By.className("form-control grid-search__search__criteria__input-text grid-search__search__criteria__input-text--datetime"));
-	dateOfBirthFrom.get(0).sendKeys(value);	
+	dateOfBirthFrom.get(0).sendKeys(dateOfBirthFromValue);	
 		
 	}
 	
 	
 	
-	public void dateOfBirthToFillUp(String value){
+	public void dateOfBirthToFillUp(String dateOfBirthToValue){
 	List <WebElement> dateOfBirthTo = driver.findElements(By.className("form-control grid-search__search__criteria__input-text grid-search__search__criteria__input-text--datetime"));
-	dateOfBirthTo.get(1).sendKeys(value);		
+	dateOfBirthTo.get(1).sendKeys(dateOfBirthToValue);		
 		
 	}
 	
 	
 	
-	public void agentOrOfwcaChooseFromDropdownList(String value){
+	public void agentOrOfwcaChooseFromDropdownList(String agentOrOfwcaChooseValue){
 	WebElement agentOrOfwcaChoose = driver.findElement(By.className("grid-search__search__criteria__dropdown-button search-combo-box__grid-search__search__criteria__dropdown-button"));
 	Select clickThis = new Select(agentOrOfwcaChoose);
-	clickThis.selectByVisibleText(value);	
+	clickThis.selectByVisibleText(agentOrOfwcaChooseValue);	
 		
 	}
 	
 	
 	
-	public void searchForClientButtonClickOn(String value){
+	public void searchForClientButtonClickOn(){
 	List <WebElement> searchForClientButton = driver.findElements(By.className("client-policies__search__actions__button-search"));
-	searchForClientButton.get(0).sendKeys(value);	
+	searchForClientButton.get(0).click();	
 		
 	}
 	
@@ -209,31 +209,31 @@ public class Clients {
 		}
 		*/
 	
-	public void nameTabClickOn(String text){
+	public void nameTabClickOn(){
 	List <WebElement> nameOrCompanyName = driver.findElements(By.className("quick-search__search-response__advanced-panel__tab quick-search__search-response__advanced-panel__tab--active"));
 	nameOrCompanyName.get(0).click();	
 				
 		}
 	
-	public void comapnyTabClickOn(String text){
+	public void comapnyTabClickOn(){
 	List <WebElement> nameOrCompanyName = driver.findElements(By.className("quick-search__search-response__advanced-panel__tab quick-search__search-response__advanced-panel__tab--active"));
 	nameOrCompanyName.get(1).click();	
 					
 		}
 	
-	public void peselTabClickOn(String text){
+	public void peselTabClickOn(){
 		List <WebElement> peselTab = driver.findElements(By.className("quick-search__search-response__advanced-panel__content_column-extra-input__btn-group__element"));
 		peselTab.get(0).click();
 	
 	}
 	
-	public void policyNumberTabClickOn(String text){
+	public void policyNumberTabClickOn(){
 		List <WebElement> peselTab = driver.findElements(By.className("quick-search__search-response__advanced-panel__content_column-extra-input__btn-group__element"));
 		peselTab.get(1).click();
 	
 	}
 	
-	public void rejNumberTabClickOn(String text){
+	public void rejNumberTabClickOn(){
 		List <WebElement> peselTab = driver.findElements(By.className("quick-search__search-response__advanced-panel__content_column-extra-input__btn-group__element"));
 		peselTab.get(2).click();
 	

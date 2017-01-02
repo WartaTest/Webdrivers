@@ -17,9 +17,9 @@ public class ClientsDetailPage {
 	clientsDetailsPageGoBackTo.click();
 	}
 	
-	public void clientsDetailsPageNameCheck(String value){
+	public void clientsDetailsPageNameCheck(String clientsDetailsPageNameValue){
 		String clientsDetailsPageGoBackTo = driver.findElement(By.className("tile-client-summary__client-personal-details__name")).getText();
-		Assert.assertTrue(clientsDetailsPageGoBackTo.contains(value));
+		Assert.assertTrue(clientsDetailsPageGoBackTo.contains(clientsDetailsPageNameValue));
 		}
 	
 	public void clientsDetailsPageOverviewClick(){
@@ -67,9 +67,9 @@ public class ClientsDetailPage {
 	}
 	
 	
-	public void clientsDetailPagePeselCheckValue(String value){
+	public void clientsDetailPagePeselCheckValue(String clientsDetailPagePeselValue){
 		String clientsDetailPagePesel = driver.findElement(By.className("tile-client-summary__client-summary__number tile-client-summary__client-summary__number__pesel")).getText();
-		Assert.assertTrue(( clientsDetailPagePesel).contains(value));
+		Assert.assertTrue(( clientsDetailPagePesel).contains(clientsDetailPagePeselValue));
 	}
 	
 	

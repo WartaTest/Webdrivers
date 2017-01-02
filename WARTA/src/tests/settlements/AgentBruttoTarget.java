@@ -19,7 +19,7 @@ import org.junit.Test;
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
-	//private String SubjectType = "AGENT"; 
+	private String SubjectType = "AGENT"; 
 	private int x = 1000;
 	private String z = "";
 	@Test
@@ -33,8 +33,8 @@ public class AgentBruttoTarget {
 		
 		
 		
-//		RunTest runTest = new RunTest();
-//		runTest.main("AGENT", 2);
+		RunTest runTest = new RunTest();
+		//runTest.main(20, SubjectType[0], "SIMPLIFIED_NETTO");
 					
 		/*
 		Daro Daro = new Daro();
@@ -63,6 +63,35 @@ public class AgentBruttoTarget {
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
+//		brokerAgentSettlementPage.balancePeriodCheckText(text);
+//		brokerAgentSettlementPage.balancePeriodCheckValue(value);
+//		brokerAgentSettlementPage.closedSettlementPeriods(text);
+//		brokerAgentSettlementPage.collectionCheckText(text);
+//		brokerAgentSettlementPage.collectionCheckValue(value);
+//		brokerAgentSettlementPage.commisionTextCheck(text);
+//		brokerAgentSettlementPage.commisionValueCheck(value);
+//		brokerAgentSettlementPage.commissionCheckText(text);
+//		brokerAgentSettlementPage.commissionCheckValue(value);
+//		brokerAgentSettlementPage.debtCollectionLimitationTextCheck(text);
+//		brokerAgentSettlementPage.debtCollectionTextCheck(text);
+//		brokerAgentSettlementPage.debtCollectionValueCheck(value);
+//		brokerAgentSettlementPage.lastPeriodBalanceTextCheck(text);
+//		brokerAgentSettlementPage.lastPeriodBalanceValueCheck(value);
+//		brokerAgentSettlementPage.leftToPayCheckText(text);
+//		brokerAgentSettlementPage.leftToPayCheckValue(value);
+//		brokerAgentSettlementPage.periodCheckText(text);
+//		brokerAgentSettlementPage.roleAndIdTextCheck(roleAndId);
+//		brokerAgentSettlementPage.roleNameCheck(roleName);
+//		brokerAgentSettlementPage.settlementApproachTextCheck(text);
+//		brokerAgentSettlementPage.settlementApproachValueCheck(value);
+//		brokerAgentSettlementPage.settlementCheckText(text);
+//		brokerAgentSettlementPage.settlementCheckValue(value);
+//		brokerAgentSettlementPage.statusCheckText(text);
+//		brokerAgentSettlementPage.toPayTextCheck(text);
+//		brokerAgentSettlementPage.toPayValueCheck(value);
+//		brokerAgentSettlementPage.totalBalanceTextCheck(text);
+//		brokerAgentSettlementPage.totalBalanceValueCheck(value);
+//		
 		
 		brokerAgentSettlementPage.settlementClickOn(); //to nie zadzia³a, potrzeba id
 
@@ -70,10 +99,40 @@ public class AgentBruttoTarget {
 		
 		BrokerAgentSettlementDetailsPage brokerAgentSettlementDetailsPage = new BrokerAgentSettlementDetailsPage();
 		
+//		brokerAgentSettlementDetailsPage.accountNumberTextCheck(text);
+//		brokerAgentSettlementDetailsPage.accountNumberValueCheck();
+//		brokerAgentSettlementDetailsPage.AmountTextCheck(text);
+//		brokerAgentSettlementDetailsPage.AmountValueCheck(value);
+//		brokerAgentSettlementDetailsPage.balancePeriodCheckText(text);
+//		brokerAgentSettlementDetailsPage.balancePeriodCheckValue(value);
+//		brokerAgentSettlementDetailsPage.collectionCheckText(text);
+//		brokerAgentSettlementDetailsPage.collectionCheckValue(value);
+//		brokerAgentSettlementDetailsPage.collectionInPolicyCheckText(text);
+//		brokerAgentSettlementDetailsPage.commissionCheckText(text);
+//		brokerAgentSettlementDetailsPage.commissionCheckValueWithOK(value);
+//		brokerAgentSettlementDetailsPage.commissionCheckValueWithoutOK(value);
+//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckText(text);
+//		brokerAgentSettlementDetailsPage.commissionInPolicyCheckValue(value);
+//		brokerAgentSettlementDetailsPage.csvDocumentButtonCheckIfClickable();
+//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputCheckText(text);
+//		brokerAgentSettlementDetailsPage.insurersLastNameAndNameInSearchInputFillUp(value);
+//		brokerAgentSettlementDetailsPage.nameAndComapnyFullNameCheck(nameAndCompanyFullName);
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+//		brokerAgentSettlementDetailsPage.
+		
 		
 		brokerAgentSettlementDetailsPage.redirectionButtonClickAndCheckIfRedirected();
 		
-		brokerAgentSettlementDetailsPage.searchToogleClick();
+		
+		
+		
 			
 		driver.quit();
 		

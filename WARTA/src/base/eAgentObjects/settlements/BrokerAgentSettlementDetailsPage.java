@@ -45,73 +45,73 @@ public class BrokerAgentSettlementDetailsPage {
 		
 	}
 	
-	public void settlementDetailTextCheck(String text){
+	public void settlementDetailTextCheck(String settlementDetailText){
 		//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void settlementDetailNumberCheck(String value){
+	public void settlementDetailNumberCheck(String settlementDetailText){
 		String settlementDetailNumber;
 		settlementDetailNumber = driver.findElement(By.className("settlement-details-menu__title ")).getText();
-		Assert.assertTrue(settlementDetailNumber.contains(value));		
+		Assert.assertTrue(settlementDetailNumber.contains(settlementDetailText));		
 		
 	}
 
-	public void settlementDetailStatusCheck(String value){
+	public void settlementDetailStatusCheck(String settlementDetailStatus){
 	String settlementDetailsStatus;
 	settlementDetailsStatus = driver.findElement(By.className("settlement-details-menu__subtitle")).getText();
-	Assert.assertTrue(settlementDetailsStatus.contains(value));
+	Assert.assertTrue(settlementDetailsStatus.contains(settlementDetailStatus));
 	}
 	
-	public void balancePeriodCheckText(String text){
+	public void balancePeriodCheckText(String balancePeriodCheck){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void balancePeriodCheckValue(String value){
+	public void balancePeriodCheckValue(String balancePeriodCheckValue){
 		String balancePeriodCheck;
 		balancePeriodCheck = driver.findElement(By.className("settlement-details-equation__item__content__amount")).getText();
-		Assert.assertTrue(balancePeriodCheck.contains(value));
+		Assert.assertTrue(balancePeriodCheck.contains(balancePeriodCheckValue));
 		
 	}
 	
-	public void collectionCheckText(String text){
+	public void collectionCheckText(String collectionText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void collectionCheckValue(String value){
+	public void collectionCheckValue(String collectionValue){
 	String collectionCheck;
 	collectionCheck = driver.findElement(By.className("settlement-details-equation__item__content__amount")).getText();
-	Assert.assertTrue(collectionCheck.contains(value));	
+	Assert.assertTrue(collectionCheck.contains(collectionValue));	
 	}
 	
-	public void commissionCheckText(String text){
+	public void commissionCheckText(String commissionText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void commissionCheckValueWithOK(String value){
+	public void commissionCheckValueWithOK(String commissionValueWithOK){
 		String commissionCheckWithOK;
 		commissionCheckWithOK = driver.findElement(By.className("settlement-details-equation__item__content__amount--ok")).getText();
-		Assert.assertTrue(commissionCheckWithOK.contains(value));	
+		Assert.assertTrue(commissionCheckWithOK.contains(commissionValueWithOK));	
 	}
 	
-	public void commissionCheckValueWithoutOK(String value){
+	public void commissionCheckValueWithoutOK(String commissionValueWithoutOK){
 		String commissionCheckWithoutOK;
 		commissionCheckWithoutOK = driver.findElement(By.className("settlement-details-equation__item__content__amount")).getText();
-		Assert.assertTrue(commissionCheckWithoutOK.contains(value));
+		Assert.assertTrue(commissionCheckWithoutOK.contains(commissionValueWithoutOK));
 
 	}
-	public void settlementDetailsPeriodTextAndValueCheck(String textAndValue){
+	public void settlementDetailsPeriodTextAndValueCheck(String settlementDetailsPeriodTextAndValue){
 		String settlementDetailsPeriod;
 		settlementDetailsPeriod = driver.findElement(By.className("settlement-details-equation__item__period")).getText();
-		Assert.assertTrue(settlementDetailsPeriod.contains(textAndValue));		
+		Assert.assertTrue(settlementDetailsPeriod.contains(settlementDetailsPeriodTextAndValue));		
 	}
 	
-	public void settlementDocuments(String text){
+	public void settlementDocuments(String settlementDocuments){
 		//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void settlementCollectionAndCommissionDocuments(String text){
+	public void settlementCollectionAndCommissionDocuments(String settlementCollectionAndCommissionDocuments){
 		//brak id/klasy/cssSelektora
 		}
 	
@@ -129,15 +129,15 @@ public class BrokerAgentSettlementDetailsPage {
 		ExpectedConditions.elementToBeClickable(pdfDocumentButton);
 		}
 	
-	public void settlementContestTextCheck(String text){
+	public void settlementContestTextCheck(String settlementContestText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void productionSheet(String text){
+	public void productionSheet(String productionSheet){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void redirectionTextCheck(String text){
+	public void redirectionTextCheck(String redirectionText){
 		//brak id/klasy/cssSelektora
 	}
 	
@@ -163,47 +163,47 @@ public class BrokerAgentSettlementDetailsPage {
 	}
 		
 
-	public void proceedPaymentCheckText(String text){
+	public void proceedPaymentCheckText(String proceedPaymentText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void requiredDateTextCheck(String text){
+	public void requiredDateTextCheck(String requiredDateText){
 		//brak id/klasy/cssSelektora
 	}
 
-	public void requiredDateValueCheck(String value){
+	public void requiredDateValueCheck(String requiredDateValue){
 		//brak id/klasy/cssSelektora  col-md-8 jako class name wszedzie
 }
 
-	public void accountNumberTextCheck(String text){
+	public void accountNumberTextCheck(String accountNumberText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void accountNumberValueCheck(){
+	public void accountNumberValueCheck(String accountNumberValue){
 		//brak id/klasy/cssSelektora  col-md-8 jako class name wszedzie
 }
 
-	public void recieverCheckText(String text){
+	public void recieverCheckText(String recieverText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void recieverCheckValue(String value){
+	public void recieverCheckValue(String recieverValue){
 		//brak id/klasy/cssSelektora  col-md-8 jako class name wszedzie
 }
 
-	public void recommendedTitleTextCheck(String text){
+	public void recommendedTitleTextCheck(String recommendedTitleText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void recommendedTitleValueCheck(String value){
+	public void recommendedTitleValueCheck(String recommendedTitleValue){
 		//brak id/klasy/cssSelektora  col-md-8 jako class name wszedzie
 }
 
-	public void AmountTextCheck(String text){
+	public void AmountTextCheck(String AmountText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void AmountValueCheck(String value){
+	public void AmountValueCheck(String AmountValue){
 		//brak id/klasy/cssSelektora  col-md-8 jako class name wszedzie
 }
 	
@@ -216,54 +216,54 @@ public class BrokerAgentSettlementDetailsPage {
 		searchToogle.click();
 	}
 	
-	public void numberOFWCAInSearchInputCheckText(String text){
+	public void numberOFWCAInSearchInputCheckText(String numberOFWCAInSearchInputText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void numberOFWCAInSearchInputFillUp(String value){
+	public void numberOFWCAInSearchInputFillUp(String numberOFWCAInSearchInputValue){
 //		WebElement numberOFWCAInSearchInput;
 //		numberOFWCAInSearchInput = driver.findElement(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
 //		numberOFWCAInSearchInput.sendKeys(value); taki same className jak numberOFWCA!!!!
 	}
 
-	public void nameOFWCAInSearchInputCheckText(String text){
+	public void nameOFWCAInSearchInputCheckText(String nameOFWCAInSearchInpuText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void nameOFWCAInSearchInputFillUp(String value){
+	public void nameOFWCAInSearchInputFillUp(String nameOFWCAInSearchInputValue){
 //		WebElement nameOFWCAInSearchInput;
 //		nameOFWCAInSearchInput = driver.findElement(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
 //		nameOFWCAInSearchInput.sendKeys(value); taki same className jak numberOFWCA!!!!
 }
 
-	public void policyNumberInSearchInputCheckText(String text){
+	public void policyNumberInSearchInputCheckText(String policyNumberInSearchInputText){
 		//brak id/klasy/cssSelektora
 	}
 
-	public void policyNumberInSearchInputFillUp(String value){
+	public void policyNumberInSearchInputFillUp(String policyNumberInSearchInputValue){
 //		WebElement policyNumberInSearchInput;
 //		policyNumberInSearchInput = driver.findElement(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
 //		policyNumberInSearchInput.sendKeys(value); taki same className jak numberOFWCA!!!!
 	}
 
-	public void insurersLastNameAndNameInSearchInputCheckText(String text){
+	public void insurersLastNameAndNameInSearchInputCheckText(String insurersLastNameAndNameInSearchInputText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void insurersLastNameAndNameInSearchInputFillUp(String value){
+	public void insurersLastNameAndNameInSearchInputFillUp(String insurersLastNameAndNameInSearchInputValue){
 //		WebElement insurersLastNameAndNameInSearchInput;
 //		insurersLastNameAndNameInSearchInput = driver.findElement(By.className("form-control form-control--has-icon client-policies__search__criteria__input-text"));
 //		insurersLastNameAndNameInSearchInput.sendKeys(value); taki same className jak numberOFWCA!!!!
 	}
 	
-	public void wayOfPaymentInSearchInputCheckText(String text){
+	public void wayOfPaymentInSearchInputCheckText(String wayOfPaymentInSearchInputText){
 		//brak id/klasy/cssSelektora
 	}
 
-	public void wayOfPaymentInSearchInputChooseFromDropdown(String dropDownListValue){
+	public void wayOfPaymentInSearchInputChooseFromDropdown(String wayOfPaymentInSearchInputDropdownListValue){
 		WebElement dropDownListBox = driver.findElement(By.className("grid-search__search__criteria__dropdown-button"));
 		Select clickThis = new Select(dropDownListBox);
-		clickThis.selectByVisibleText(dropDownListValue);
+		clickThis.selectByVisibleText(wayOfPaymentInSearchInputDropdownListValue);
 	}
 	
 	public void searchPoliciesButtonClick(){
@@ -275,55 +275,55 @@ public class BrokerAgentSettlementDetailsPage {
 	}
 	
 
-	public void policiesInThatSettlementPeriodCheckText(String text){
+	public void policiesInThatSettlementPeriodCheckText(String policiesInThatSettlementPeriodText){
 		//brak id/klasy/cssSelektora
 }
 
-	public void numberOFWCATextCheck(String text){
+	public void numberOFWCATextCheck(String numberOFWCAText){
 		//brak id/klasy/cssSelektora
 }
 	
-	public void numberOFWCAValueCheck(String value){
+	public void numberOFWCAValueCheck(String numberOFWCAValue){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void nameOFWCATextCheck(String text){
+	public void nameOFWCATextCheck(String nameOFWCAText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void nameOFWCAValueCheck(String value){
+	public void nameOFWCAValueCheck(String nameOFWCAValue){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void policyTextCheck(String text){
+	public void policyTextCheck(String policyText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void policyValueCheck(String value){
+	public void policyValueCheck(String policyValue){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void collectionInPolicyCheckText(String text){
+	public void collectionInPolicyCheckText(String collectionInPolicyText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void collectionInPolicyCheckValue(String value){
+	public void collectionInPolicyCheckValue(String collectionInPolicyValue){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void wayOfPaymentInPolicyCheckText(String text){
+	public void wayOfPaymentInPolicyCheckText(String wayOfPaymentInPolicyText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void wayOfPaymentInPolicyCheckValue(String value){
+	public void wayOfPaymentInPolicyCheckValue(String wayOfPaymentInPolicyValue){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void commissionInPolicyCheckText(String text){
+	public void commissionInPolicyCheckText(String commissionInPolicyText){
 		//brak id/klasy/cssSelektora
 	}
 
-	public void commissionInPolicyCheckValue(String value){
+	public void commissionInPolicyCheckValue(String commissionInPolicyValue){
 		//brak id/klasy/cssSelektora
 	}
 	

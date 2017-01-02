@@ -24,146 +24,146 @@ public class BrokerAgentSettlementPage {
 		Assert.assertTrue(roleNameValue.contains(roleName));
 		}
 	
-	public void roleAndIdTextCheck(String roleAndId){
+	public void roleAndIdTextCheck(String roleAndIdText){
 		
 		
 		String roleAndIdValue;
 		roleAndIdValue = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-username")).getText();
-		Assert.assertTrue(roleAndIdValue.contains(roleAndId));
+		Assert.assertTrue(roleAndIdValue.contains(roleAndIdText));
 	}
 	
-	public void nameAndComapnyFullNameTextCheck(String nameAndCompanyFullName){
+	public void nameAndComapnyFullNameTextCheck(String nameAndComapnyFullNameText){
 	String nameAndCompanyName;
 	nameAndCompanyName = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value")).getText();
-	Assert.assertTrue(nameAndCompanyName.contains(nameAndCompanyFullName));	
+	Assert.assertTrue(nameAndCompanyName.contains(nameAndComapnyFullNameText));	
 	
 	}
 	
-	public void debtCollectionTextCheck(String text){
+	public void debtCollectionTextCheck(String debtCollectionText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void debtCollectionValueCheck(String value){
+	public void debtCollectionValueCheck(String debtCollectionValue){
 		String debtCollectionValueCheck;
 		debtCollectionValueCheck = driver.findElement(By.className("tile-settlement-summary__alert__content__variable")).getText();
-		Assert.assertTrue(debtCollectionValueCheck.contains(value));
+		Assert.assertTrue(debtCollectionValueCheck.contains(debtCollectionValue));
 	}
 	
-	public void debtCollectionLimitationTextCheck(String text){
+	public void debtCollectionLimitationTextCheck(String debtCollectionLimitationText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void totalBalanceTextCheck(String text){
+	public void totalBalanceTextCheck(String totalBalanceText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void totalBalanceValueCheck(String value){
+	public void totalBalanceValueCheck(String totalBalanceValue){
 		String totalBalance;
 		totalBalance = driver.findElement(By.className("tile-settlement-summary__equation__item__amount")).getText();
-		Assert.assertTrue(totalBalance.contains(value));
+		Assert.assertTrue(totalBalance.contains(totalBalanceValue));
 	}
 	
-	public void toPayTextCheck(String text){
+	public void toPayTextCheck(String toPayText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void toPayValueCheck(String value){
+	public void toPayValueCheck(String toPayValue){
 		String totalBalance;
 		totalBalance = driver.findElement(By.className("tile-settlement-summary__value--wrong")).getText();
-		Assert.assertTrue(totalBalance.contains(value));
+		Assert.assertTrue(totalBalance.contains(toPayValue));
 	}
 	
-	public void lastPeriodBalanceTextCheck(String text){
+	public void lastPeriodBalanceTextCheck(String lastPeriodBalanceText){
 		//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void lastPeriodBalanceValueCheck(String value){
+	public void lastPeriodBalanceValueCheck(String lastPeriodBalanceValue){
 		String totalBalance;
 		totalBalance = driver.findElement(By.className("tile-settlement-summary__equation__item__amount")).getText();
-		Assert.assertTrue(totalBalance.contains(value));
+		Assert.assertTrue(totalBalance.contains(lastPeriodBalanceValue));
 	}
 	
-	public void commisionTextCheck(String text){
+	public void commisionTextCheck(String commisionText){
 		//nie by³o widoczne, potrzebne rozliczanie nontarget
 	}
 	
-	public void commisionValueCheck(String value){
+	public void commisionValueCheck(String commisionValue){
 		//nie by³o widoczne, potrzebne rozliczanie nontarget
 	}
 	
-	public void settlementApproachTextCheck(String text){
+	public void settlementApproachTextCheck(String settlementApproachText){
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void settlementApproachValueCheck(String value){
+	public void settlementApproachValueCheck(String settlementApproachValue){
 		String settlementApproachValueCheck;
 		settlementApproachValueCheck = driver.findElement(By.className("bookmarks__bookmark__link")).getText();
-		Assert.assertTrue(settlementApproachValueCheck.contains(value));		
+		Assert.assertTrue(settlementApproachValueCheck.contains(settlementApproachValue));		
 	}
 	
-	public void closedSettlementPeriods(String text){
+	public void closedSettlementPeriods(String closedSettlementPeriods){
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void settlementCheckText(String text){
+	public void settlementCheckText(String settlementCheckText){
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void periodCheckText(String text){
+	public void periodCheckText(String periodCheckText){
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void statusCheckText(String text){
+	public void statusCheckText(String statusCheckText){
 			//brak id/klasy/cssSelektora
 	}
 
-	public void balancePeriodCheckText(String text){
+	public void balancePeriodCheckText(String balancePeriodCheckText){
 			//brak id/klasy/cssSelektora
 }
 
-	public void collectionCheckText(String text){
+	public void collectionCheckText(String leftToPayCheck){
 			//brak id/klasy/cssSelektora
 }
 
-	public void commissionCheckText(String text){
+	public void commissionCheckText(String commissionCheckText){
 			//brak id/klasy/cssSelektora
 }
 
-	public void leftToPayCheckText(String text){
+	public void leftToPayCheckText(String leftToPayCheck){
 			//brak id/klasy/cssSelektora
 }
 	
-	public void settlementCheckValue(String value){
+	public void settlementCheckValue(String settlementCheckValue){
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void periodCheckValue(String value){
+	public void periodCheckValue(String periodCheckValue){
 			String period;
 			period = driver.findElement(By.cssSelector("*[colid=\"period\"]:eq(0)")).getText();
-			Assert.assertTrue(period.contains(value));		
+			Assert.assertTrue(period.contains(periodCheckValue));		
 	}
 	
-	public void statusCheckValue(String value){
+	public void statusCheckValue(String statusCheckValue){
 			//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void balancePeriodCheckValue(String value){
+	public void balancePeriodCheckValue(String balancePeriodCheckValue){
 			//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void collectionCheckValue(String value){
+	public void collectionCheckValue(String collectionCheckValue){
 			//brak id/klasy/cssSelektora
 		
 	}
 	
-	public void commissionCheckValue(String value){
+	public void commissionCheckValue(String commissionCheckValue){
 			//brak id/klasy/cssSelektora
 	}
 			
-	public void leftToPayCheckValue(String value){
+	public void leftToPayCheckValue(String leftToPayCheckValue){
 			//brak id/klasy/cssSelektora
 	}
 	
