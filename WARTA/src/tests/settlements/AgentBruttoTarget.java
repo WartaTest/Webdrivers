@@ -48,11 +48,9 @@ public class AgentBruttoTarget {
 		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
 		
-		WebElement element;
-		element = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value"));
-		String nameAndCompanyFullName;
-		nameAndCompanyFullName = "TOMASZ ZYGMUNT HERSTOWSKI NOWA GENERACJA UBEZPIECZEÑ";
-		//nameAndCompanyFullName = Subjects.costam[];
+		WebElement element = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value"));
+		String nameAndCompanyFullName = "TOMASZ ZYGMUNT HERSTOWSKI NOWA GENERACJA UBEZPIECZEÑ";
+		//nameAndCompanyFullName = Subjects.costam[costam];
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
@@ -93,6 +91,7 @@ public class AgentBruttoTarget {
 		brokerAgentSettlementPage.settlementClickOn(settlementElements); //to nie zadzia³a, potrzeba id
 
 		//brokerAgentSettlementPage.periodCheckValue("01-09-2016 - 15-09-2016"); nie dzia³a
+		
 		
 		BrokerAgentSettlementDetailsPage brokerAgentSettlementDetailsPage = new BrokerAgentSettlementDetailsPage();
 		
