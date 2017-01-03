@@ -73,5 +73,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/JF230163/Downloads/jdbc-oracle.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -1,5 +1,7 @@
 package base.eAgentObjects.settlements;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -167,10 +169,10 @@ public class BrokerAgentSettlementPage {
 			//brak id/klasy/cssSelektora
 	}
 	
-	public void settlementClickOn(){
-			WebElement settlement;
-			settlement = driver.findElement(By.className("ag-eagent-text-clickable"));
-			settlement.click();
+	public void settlementClickOn(int settlementElements){
+			List <WebElement> settlement;
+			settlement = driver.findElements(By.className("ag-eagent-text-clickable"));
+			settlement.get(settlementElements).click();
 			
 			WebElement wait = (new WebDriverWait(driver, 10))
 					  .until(ExpectedConditions.presenceOfElementLocated(By.className("settlement-details-panel__item__content__info__icon")));;

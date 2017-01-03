@@ -8,7 +8,7 @@ public class Constant {
 	
 	public static String[] getConstants = new String[13];
 	
-	static String file = "C:\\Users\\JF225657\\Documents\\Projects\\Eclipse\\Constants.txt";
+	static String file = "C:\\Users\\JF230163\\Documents\\Constants.txt";
 	
 	public static void getConstant() throws IOException{
 	

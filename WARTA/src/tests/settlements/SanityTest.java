@@ -16,7 +16,7 @@ public class SanityTest {
 	public void Test() throws InterruptedException{
 		
 		Login login = new Login();
-		login.RunLogin(username1.CENTRALA.toString);
+		login.RunLogin(username1.CENTRALA);
 		
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
@@ -125,7 +125,8 @@ public class SanityTest {
 		String totalBalanceValueCheck = "";
 		brokerAgentSettlementPage.totalBalanceValueCheck(totalBalanceValueCheck);
 		
-		brokerAgentSettlementPage.settlementClickOn();
+		int settlementElements = 0;
+		brokerAgentSettlementPage.settlementClickOn(settlementElements);
 		
 		driver.quit();
 	}

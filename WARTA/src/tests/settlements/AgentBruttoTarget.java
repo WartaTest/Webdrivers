@@ -12,6 +12,7 @@ import base.eAgentObjects.settlements.BrokerAgentSettlementDetailsPage;
 import base.eAgentObjects.settlements.BrokerAgentSettlementPage;
 import base.eAgentObjects.settlements.Settlements;
 import dataBase.RunTest;
+import dataBase.Subjects;
 
 import org.junit.Test;
 
@@ -19,38 +20,30 @@ import org.junit.Test;
 public class AgentBruttoTarget {
 	private WebDriver driver = BrowserFactory.getBrowser("Firefox");
 	
-	// String SubjectType = "AGENT"; 
-	//private int x = 1000;
-	//private String z = "";
 	@Test
-	public void Test() throws InterruptedException{
+	public void Test() throws Throwable{
+		
+		String subjectType = "AGENT";
+		String settlementType = null; 
+		int settlementLimit = 1000;
+		
+		RunTest runTest = new RunTest();
+		runTest.getTestDataSettlements(settlementLimit, subjectType, settlementType);
 		
 		Login login = new Login();
 		login.RunLogin(username1.CENTRALA);
 			
 		StartPage startPage = new StartPage();
 		startPage.settlementGoTo();
-		
-		
-		
-		RunTest runTest = new RunTest();
-		//runTest.main();
-					
-		/*
-		Daro Daro = new Daro();
-		Daro.id(x, y);
 			
-		for (x = 0; x < IDArray.length; x++){
-		*/
+		for (settlementLimit = 0;settlementLimit < Subjects.PartyID.length; settlementLimit++){
+		
 		Settlements settlements = new Settlements();
-		//settlements.settlementsSearchInputFillUp(IDArray[x]);
+		settlements.settlementsSearchInputFillUp(Subjects.PartyID[settlementLimit]);
 		settlements.firstElementOfSettlementsSearchClick();
 		
-		String role;
-		role = "Agent:";//z
-		String id;
-		id = " " + "GDAH00230000";
-		//id1 = " " + (IDArray1[x]);
+		String role = "Agent:";
+		String id = " " + (Subjects.PartyID[settlementLimit]);
 		BrokerAgentSettlementPage brokerAgentSettlementPage = new BrokerAgentSettlementPage();
 		brokerAgentSettlementPage.roleAndIdTextCheck((role + id));
 		
@@ -59,11 +52,12 @@ public class AgentBruttoTarget {
 		element = driver.findElement(By.className("tile-settlement-summary__agent-context__agent-fullname__value"));
 		String nameAndCompanyFullName;
 		nameAndCompanyFullName = "TOMASZ ZYGMUNT HERSTOWSKI NOWA GENERACJA UBEZPIECZEÑ";
-		//nameAndCompanyFullName = IDArray[7];
+		//nameAndCompanyFullName = Subjects.costam[];
 		settlements.waitForTextToAppear(nameAndCompanyFullName, element);
 		brokerAgentSettlementPage.nameAndComapnyFullNameTextCheck(nameAndCompanyFullName);
 		
-//		brokerAgentSettlementPage.balancePeriodCheckText(balancePeriodCheckText);;
+
+//		brokerAgentSettlementPage.balancePeriodCheckText(balancePeriodCheckText);
 //		brokerAgentSettlementPage.balancePeriodCheckValue(balancePeriodCheckValue);
 //		brokerAgentSettlementPage.closedSettlementPeriods(closedSettlementPeriods);
 //		brokerAgentSettlementPage.collectionCheckText(collectionText);
@@ -94,8 +88,9 @@ public class AgentBruttoTarget {
 //		brokerAgentSettlementPage.totalBalanceTextCheck(totalBalanceText);
 //		brokerAgentSettlementPage.totalBalanceValueCheck(totalBalanceValue);
 		
+		int settlementElements = 0;
 		
-		brokerAgentSettlementPage.settlementClickOn(); //to nie zadzia³a, potrzeba id
+		brokerAgentSettlementPage.settlementClickOn(settlementElements); //to nie zadzia³a, potrzeba id
 
 		//brokerAgentSettlementPage.periodCheckValue("01-09-2016 - 15-09-2016"); nie dzia³a
 		
@@ -140,5 +135,5 @@ public class AgentBruttoTarget {
 		driver.quit();
 		
 		}
-	//}
+	}
 }

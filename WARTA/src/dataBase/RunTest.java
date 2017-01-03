@@ -7,10 +7,10 @@ public class RunTest {
 	 * @param args
 	 * @throws Throwable 
 	 */
-	public static void main(String[] args) throws Throwable {
+	public void getTestDataSettlements(int limit, String subejctType, String settlementType) throws Throwable {
 		
-		String[] SubjectType = {"AGENT", "ADVISER", "RMS"}; // tablice z typem rozliczenia 
-		Subjects.getSubject(20, SubjectType[1], "SIMPLIFIED_NETTO");
+		String[] subjectType = {"AGENT", "ADVISER", "RMS"}; // tablice z typem rozliczenia 
+		Subjects.getSubject(limit, subejctType, settlementType);
 		QueryResult.odsCoreSettlement();
 		QueryResult.odsCoreSettlementState();
 		
