@@ -57,7 +57,8 @@ public class QueryResult {
 					odsCoreSettlement[a] = resultSet.getObject(i);		              
 					a++;
 				}        
-		 } 
+		 }
+		QueryResult.resultSet.close();
   	}
   	  
   	 static void odsCoreSettlementState() throws Throwable{ 		
@@ -75,7 +76,8 @@ public class QueryResult {
 		        	 settlement_producer_state[b] = resultSet.getObject(i); 		              
 		        	 b++;
 		     }        
-		 } 	
+		 }
+		QueryResult.resultSet.close();
   	  } 
   	 public static void executeSQL(String Query) throws Throwable{    	 
     	 //Run query and store result in 'Result Set'
