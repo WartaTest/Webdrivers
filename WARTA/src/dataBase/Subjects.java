@@ -2,6 +2,8 @@ package dataBase;
 
 import java.util.ArrayList;
 
+import dataBase.QueryResult;
+
 public class Subjects {
 	//Query to get subjects 
 	private static String findSubject = "SELECT * from ODS_CORE.SETTLEMENT_PRODUCER_STATE " + 
@@ -37,7 +39,7 @@ public class Subjects {
 	   		 		counter++;
 	   		 	}
 	    counter = 1;
-	    
+	    QueryResult.resultSet.close();
 	   	for(int unitCodeSave = 0; unitCodeSave < PartyID.length; unitCodeSave++){
 	   		
 	   		Query = findUnitCode.replaceFirst("partyID",PartyID[unitCodeSave]); 
