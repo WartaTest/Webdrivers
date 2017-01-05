@@ -67,10 +67,10 @@ public class BrokerAgentSettlementDetailsPage {
 		//brak id/klasy/cssSelektora
 	}
 	
-	public void balancePeriodCheckValue(String balancePeriodCheckValue){
+	public void balancePeriodCheckValue(String balancePeriodValue){
 		String balancePeriodCheck;
 		balancePeriodCheck = driver.findElement(By.className("settlement-details-equation__item__content__amount")).getText();
-		Assert.assertTrue(balancePeriodCheck.contains(balancePeriodCheckValue));
+		Assert.assertTrue(balancePeriodCheck.contains(balancePeriodValue));
 		
 	}
 	

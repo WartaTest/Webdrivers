@@ -46,7 +46,7 @@ public class Login {
 				}
 		else {
 			   WebElement wait = (new WebDriverWait(driver, 10))
-						  .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='wrap']/div/ui-view/div/div/app-header/div/app-menu/header/div/div/div/div[1]/div[2]/bookmarks/div/bookmark/div/a")));;
+						  .until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='bookmark_reports']/a")));;
 							
 			}
 	}}

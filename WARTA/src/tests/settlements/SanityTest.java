@@ -113,16 +113,16 @@ public class SanityTest {
 		String statusCheckValue = "";
 		brokerAgentSettlementPage.statusCheckValue(statusCheckValue);
 		
-		String toPayTextCheck = "";
-		brokerAgentSettlementPage.toPayTextCheck(toPayTextCheck);
+//		String toPayTextCheck = "";
+//		brokerAgentSettlementPage.toPayTextCheck(toPayTextCheck);
 		
-		String toPayValueCheck = "";
+		String toPayValueCheck = "-117,99";
 		brokerAgentSettlementPage.toPayValueCheck(toPayValueCheck);
 		
-		String totalBalanceTextCheck = "";
-		brokerAgentSettlementPage.totalBalanceTextCheck(totalBalanceTextCheck);
+//		String totalBalanceTextCheck = "";
+//		brokerAgentSettlementPage.totalBalanceTextCheck(totalBalanceTextCheck);
 		
-		String totalBalanceValueCheck = "";
+		String totalBalanceValueCheck = "-117,99";
 		brokerAgentSettlementPage.totalBalanceValueCheck(totalBalanceValueCheck);
 		
 		int settlementElements = 0;

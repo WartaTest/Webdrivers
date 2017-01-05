@@ -12,9 +12,7 @@ public class BrowserFactory {
 
 private static Map<String, WebDriver> drivers = new HashMap<String, WebDriver>();
 
-/*
- * Factory method for getting browsers
- */
+
 public static WebDriver getBrowser(String browserName) {
 	WebDriver driver = null;
 
