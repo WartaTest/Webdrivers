@@ -25,7 +25,7 @@ public class AgentBruttoTarget {
 		
 		String subjectType = "AGENT";
 		String settlementType = "SIMPLIFIED_NETTO"; 
-		int settlementLimit = 100;
+		int settlementLimit = 1000;
 		
 		RunTest runTest = new RunTest();
 		runTest.getTestDataSettlements(settlementLimit, subjectType, settlementType);

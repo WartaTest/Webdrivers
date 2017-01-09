@@ -81,10 +81,14 @@ public class QueryResult {
   	  } 
   	 public static void executeSQL(String Query) throws Throwable{    	 
     	 //Run query and store result in 'Result Set'
+  		 
+  		 if (statement == null){
 	     statement = connect.createStatement();
+  		 }
 	 	 resultSet = statement.executeQuery(Query);      
          System.out.println("Execute query = " + Query);
          //if(resultSet.wasNull()) System.out.println("Empty Result");            	
-    }
+	 
+  		 }
   	  
 }
